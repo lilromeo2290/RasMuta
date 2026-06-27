@@ -68,7 +68,7 @@ export function AboutBroadcasterView() {
                     &ldquo;{broadcaster.quote}&rdquo;
                   </p>
                   <footer className="mt-3 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                    — {broadcaster.shortName}
+                    — {broadcaster.quoteAttribution}
                   </footer>
                 </blockquote>
               </div>

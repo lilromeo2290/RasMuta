@@ -66,7 +66,7 @@ export function Hero() {
               &ldquo;{broadcaster.quote}&rdquo;
             </p>
             <footer className="mt-2 text-xs uppercase tracking-[0.18em] text-cream/70">
-              — {broadcaster.shortName}
+              — {broadcaster.quoteAttribution}
             </footer>
           </motion.blockquote>
 

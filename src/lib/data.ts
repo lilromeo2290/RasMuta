@@ -4,6 +4,7 @@
 export const broadcaster = {
   name: 'Edem Devine Nyasorgbor',
   shortName: 'Edem D. Nyasorgbor',
+  quoteAttribution: 'Rus Muta Foundation',
   title: 'Veteran Broadcaster • Journalist • Mentor',
   birth: 'March 14, 1952',
   death: 'August 21, 2023',
