@@ -15,7 +15,7 @@ export const broadcaster = {
   portrait:
     'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1200&auto=format&fit=crop',
   intro:
-    'For more than four decades, Edem Devine Nyasorgbor\'s voice travelled across the airwaves of West Africa, carrying the news, the hopes, and the conscience of a generation. He anchored the nation through elections, transitions, triumphs, and tragedies — always calm, always clear, always fair.',
+    'For more than four decades, Edem Devine Nyasorgbor\'s voice travelled across the airwaves of Volta Region, Ghana and Togo carrying the news, the hopes, and the conscience of a generation. He anchored the nation through entertainment, elections, transitions, triumphs, and tragedies — always calm, always clear, always fair.',
 }
 
 export const biography = [
