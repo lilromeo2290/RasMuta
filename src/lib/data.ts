@@ -565,7 +565,6 @@ export const navigation: { key: import('./store').ViewKey; label: string }[] = [
   { key: 'events', label: 'Events' },
   { key: 'gallery', label: 'Gallery' },
   { key: 'news', label: 'News' },
-  { key: 'donate', label: 'Donate' },
   { key: 'volunteer', label: 'Volunteer' },
   { key: 'contact', label: 'Contact' },
 ]
