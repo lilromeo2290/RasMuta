@@ -58,8 +58,8 @@ export function EventsView() {
       <PageHero
         eyebrow="Events"
         title="Upcoming Events & Memorial Lectures"
-        description="Join us at the Memorial Lecture, the Candlelight Gala, mentorship masterclasses, remembrance ceremonies, and community health camps."
         image="/event-banner.jpg"
+        boldImage
       />
 
       {/* Featured event */}

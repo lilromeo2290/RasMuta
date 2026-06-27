@@ -203,6 +203,13 @@
     linear-gradient(180deg, rgba(10, 31, 61, 0.4) 0%, rgba(10, 31, 61, 0.85) 100%);
 }
 
+/* Bolder, more vivid hero — image shows through more clearly;
+   text readability is preserved by a stronger bottom gradient and a drop shadow on the text. */
+.hero-overlay-bold {
+  background:
+    linear-gradient(180deg, rgba(10, 31, 61, 0.15) 0%, rgba(10, 31, 61, 0.25) 45%, rgba(10, 31, 61, 0.78) 100%);
+}
+
 /* Card hover lift */
 .lift-on-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
