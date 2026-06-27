@@ -99,3 +99,29 @@ Stage Summary:
 - GitHub remote: https://github.com/lilromeo2290/RasMuta.git (token-embedded URL in .git/config)
 - Worklog script: /home/z/my-project/scripts/worklog-push.sh (run it any time to commit + push)
 - Security note: the PAT was shared in plain text in chat; user has been advised to regenerate it at https://github.com/settings/tokens after this session
+
+---
+Task ID: 4
+Agent: Main (Super Z)
+Task: Add an Appreciation modal that appears before the site loads
+
+Work Log:
+- Created src/components/shared/appreciation-modal.tsx — a Framer Motion modal with:
+  • Navy backdrop with blur, gold-accented card
+  • Heart icon, "Appreciation" title, gold divider
+  • "The Nyasorgbor and Allied Families of Edem Divine Nyasorgbor" byline
+  • Full body: "wishes to thank you all for your help, prayers, encouragement, donations and support during our moment of grief. May God Richly Bless You."
+  • "Enter the Site" gold CTA button
+  • Close (X) button in top-right
+  • Esc-key dismissal
+  • Click-outside dismissal
+  • Body scroll lock while open
+  • localStorage persistence (key: ras-muta-appreciation-seen-v1) so it only shows on the FIRST visit per browser — returning visitors aren't repeatedly interrupted
+  • 800ms delay after page paint so it fades in gracefully
+- Wired <AppreciationModal /> into src/app/page.tsx, above <Header />
+- Lint: clean
+- Browser verification: modal appears on first visit; dismiss via "Enter the Site" works; modal does NOT reappear on reload (localStorage flag respected)
+
+Stage Summary:
+- Site now opens with a respectful appreciation message from the Nyasorgbor and allied families before the main content is browsable
+- Returning visitors (same browser) won't see it again, but it can be re-shown by clearing localStorage key 'ras-muta-appreciation-seen-v1'

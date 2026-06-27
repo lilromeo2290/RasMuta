@@ -16,6 +16,7 @@ import { DonateView } from '@/components/views/donate-view'
 import { VolunteerView } from '@/components/views/volunteer-view'
 import { ContactView } from '@/components/views/contact-view'
 import { AdminView } from '@/components/views/admin-view'
+import { AppreciationModal } from '@/components/shared/appreciation-modal'
 
 export default function Home() {
   const view = useAppStore((s) => s.view)
@@ -51,6 +52,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <AppreciationModal />
       <Header />
       <main className="flex-1">
         <AnimatePresence mode="wait">
