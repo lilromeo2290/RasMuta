@@ -45,3 +45,33 @@ Stage Summary:
 - Console: clean (no runtime errors)
 - Mobile + desktop responsive verified
 - Site is fully interactive and ready for delivery
+
+---
+Task ID: 2
+Agent: Main (Super Z)
+Task: Rename the broadcaster from "Samuel Adeoye Olawale" to "Edem Devine Nyasorgbor" across the entire site
+
+Work Log:
+- Searched the src tree; found references in 13 files plus the Prisma schema header
+- Replaced names and derived names consistently:
+  • "Samuel Adeoye Olawale" → "Edem Devine Nyasorgbor"
+  • "Samuel A. Olawale" → "Edem D. Nyasorgbor"
+  • "S. A. Olawale" → "E. D. Nyasorgbor"
+  • first-name "Samuel" → "Edem" (in body copy)
+  • "Olawale Memorial Foundation" / "Olawale Foundation" → "Nyasorgbor Memorial Foundation"
+  • "Olawale School of Broadcast Journalism" / "Olawale School" → "Nyasorgbor School..."
+  • "Olawale Archive" → "Nyasorgbor Archive"
+  • "Olawale Media Excellence Awards" / "Olawale Awards" → "Nyasorgbor Media Excellence Awards" / "Nyasorgbor Awards"
+  • "Olawale Scholarship" → "Nyasorgbor Scholarship"
+  • "Olawale family" → "Nyasorgbor family"
+  • "Olawale House" → "Nyasorgbor House"
+  • "Mrs. Abimbola Olawale" (widow) → "Mrs. Abimbola Nyasorgbor"
+  • "olawalefoundation.org" → "nyasorgborfoundation.org" (info@ and press@)
+  • Phone vanity mnemonic "+234 700 OLAWALE (652 9253)" → "+234 700 NYASORG (692 7674)" (NYASORG = 6927674 on a phone keypad)
+- Updated SEO metadata (title, description, keywords, OpenGraph, Twitter) in src/app/layout.tsx
+- Updated Prisma schema header comment
+- Lint: clean (no errors)
+- Browser verification: home page hero shows "Edem Devine Nyasorgbor"; About the Broadcaster page renders the new full name in headings, biography, timeline, and awards section; console clean
+
+Stage Summary:
+- Renamer complete; the broadcaster is now consistently "Edem Devine Nyasorgbor" everywhere on the site, including all foundation, school, award, archive, building, email, and phone references

@@ -38,7 +38,7 @@ export function DonateCTA() {
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               The 2026 appeal funds the next cohort of 142 scholars, the fourth mentorship
               cohort of 60 journalists, and the Makurdi clean-water project. Every contribution
-              is receipted, reported, and directed to a programme Samuel himself would have
+              is receipted, reported, and directed to a programme Edem himself would have
               endorsed without hesitation.
             </p>
 

@@ -36,7 +36,7 @@ export function FoundationOverview() {
         <SectionHeading
           eyebrow="The Foundation"
           title="Carrying the Candle Forward"
-          description="Established in 2023 by the family, colleagues, and trustees of his estate to honour the work Samuel A. Olawale most loved — and to keep his microphone in the hands of those who will use it well."
+          description="Established in 2023 by the family, colleagues, and trustees of his estate to honour the work Edem D. Nyasorgbor most loved — and to keep his microphone in the hands of those who will use it well."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

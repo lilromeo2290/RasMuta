@@ -92,7 +92,7 @@ export function Footer() {
             </div>
             <div>
               <div className="font-serif text-base font-bold text-gold">
-                Samuel A. Olawale
+                Edem D. Nyasorgbor
               </div>
               <div className="text-[11px] uppercase tracking-[0.18em] text-cream/70">
                 Memorial Foundation
@@ -141,7 +141,7 @@ export function Footer() {
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-gold" />
               <span>
-                Olawale House, 14 Broadcasting Road,<br />
+                Nyasorgbor House, 14 Broadcasting Road,<br />
                 Bodija, Ibadan, Oyo State, Nigeria
               </span>
             </li>
@@ -151,8 +151,8 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 flex-shrink-0 text-gold" />
-              <a href="mailto:info@olawalefoundation.org" className="hover:text-gold">
-                info@olawalefoundation.org
+              <a href="mailto:info@nyasorgborfoundation.org" className="hover:text-gold">
+                info@nyasorgborfoundation.org
               </a>
             </li>
           </ul>
@@ -198,11 +198,11 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-cream/70 sm:flex-row sm:px-6 lg:px-8">
           <p>
-            &copy; {new Date().getFullYear()} The Samuel A. Olawale Memorial Foundation.
+            &copy; {new Date().getFullYear()} The Edem D. Nyasorgbor Memorial Foundation.
             All rights reserved.
           </p>
           <p className="text-center sm:text-right">
-            In loving memory of Samuel Adeoye Olawale (1952&ndash;2023).
+            In loving memory of Edem Devine Nyasorgbor (1952&ndash;2023).
           </p>
         </div>
       </div>

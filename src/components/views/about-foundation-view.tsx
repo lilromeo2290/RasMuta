@@ -27,9 +27,9 @@ const objectives = [
       'Support at least 60 community-radio stations with grants, training, and equipment by 2028, with a particular focus on conflict-affected and climate-vulnerable regions.',
   },
   {
-    title: 'Establish the Olawale Archive',
+    title: 'Establish the Nyasorgbor Archive',
     body:
-      'Restore, digitise, and make freely available the full broadcast archive of Samuel A. Olawale — more than 9,000 bulletins and 38 documentaries — by 2030.',
+      'Restore, digitise, and make freely available the full broadcast archive of Edem D. Nyasorgbor — more than 9,000 bulletins and 38 documentaries — by 2030.',
   },
   {
     title: 'Host the Annual Memorial Lecture',
@@ -63,7 +63,7 @@ export function AboutFoundationView() {
           />
           <div className="mt-10 space-y-5">
             <p className="text-base leading-relaxed text-muted-foreground">
-              In the days following Samuel A. Olawale’s passing on 21 August 2023, his family and
+              In the days following Edem D. Nyasorgbor’s passing on 21 August 2023, his family and
               his closest colleagues received hundreds of messages from newsrooms, schools,
               community stations, and listeners across the world. The most common request was
               simple: that the work he had begun — the teaching, the scholarships, the
@@ -72,12 +72,12 @@ export function AboutFoundationView() {
             <p className="text-base leading-relaxed text-muted-foreground">
               Within three months, the family had convened a founding board. Within six, the
               Foundation was registered as a non-profit trust. The founding gift came from the
-              Olawale family itself, with matching commitments from three networks at which
-              Samuel had worked. By the first anniversary of his passing, the Foundation had
+              Nyasorgbor family itself, with matching commitments from three networks at which
+              Edem had worked. By the first anniversary of his passing, the Foundation had
               enrolled its first 60 scholars and matched its first cohort of 60 mentors.
             </p>
             <p className="text-base leading-relaxed text-muted-foreground">
-              The Foundation’s name and its mandate were both drawn directly from Samuel’s
+              The Foundation’s name and its mandate were both drawn directly from Edem’s
               own wishes, recorded in conversations with his wife and his editors in the final
               year of his life. The Trustees have committed to a five-year strategic plan
               (2024 – 2028) that prioritises durable institutions over quick wins.
@@ -177,7 +177,7 @@ export function AboutFoundationView() {
           <SectionHeading
             eyebrow="Where we work"
             title="Areas of Impact & Objectives"
-            description="Our strategic priorities for 2024 – 2028, organised around the six areas of impact Samuel cared most about."
+            description="Our strategic priorities for 2024 – 2028, organised around the six areas of impact Edem cared most about."
           />
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {objectives.map((o, idx) => (
@@ -209,7 +209,7 @@ export function AboutFoundationView() {
           <SectionHeading
             eyebrow="Governance"
             title="Board of Trustees"
-            description="Six men and women who knew Samuel well — as family, as colleagues, as students, and as friends — and who have committed to carrying his work forward."
+            description="Six men and women who knew Edem well — as family, as colleagues, as students, and as friends — and who have committed to carrying his work forward."
           />
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {trustees.map((t, idx) => (

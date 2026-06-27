@@ -48,7 +48,7 @@ export function Header() {
           </div>
           <div className="hidden sm:block leading-tight">
             <div className="font-serif text-base font-bold text-navy dark:text-gold">
-              S. A. Olawale
+              E. D. Nyasorgbor
             </div>
             <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
               Memorial Foundation
@@ -142,7 +142,7 @@ export function Header() {
                 </SheetClose>
               </nav>
               <div className="mt-auto px-4 py-4 text-xs text-muted-foreground">
-                &copy; {new Date().getFullYear()} Samuel A. Olawale Memorial Foundation
+                &copy; {new Date().getFullYear()} Edem D. Nyasorgbor Memorial Foundation
               </div>
             </SheetContent>
           </Sheet>

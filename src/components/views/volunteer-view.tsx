@@ -57,7 +57,7 @@ const benefits = [
   {
     icon: Users,
     title: 'A community that lasts',
-    body: 'Join a network of more than 320 active volunteers across the country — many of them lifelong friends of Samuel.',
+    body: 'Join a network of more than 320 active volunteers across the country — many of them lifelong friends of Edem.',
   },
   {
     icon: Award,

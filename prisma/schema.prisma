@@ -1,4 +1,4 @@
-// Prisma schema for the Samuel A. Olawale Memorial Foundation
+// Prisma schema for the Edem D. Nyasorgbor Memorial Foundation
 generator client {
   provider = "prisma-client-js"
 }

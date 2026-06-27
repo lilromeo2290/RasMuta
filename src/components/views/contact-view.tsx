@@ -30,17 +30,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Office Address',
-    lines: ['Olawale House, 14 Broadcasting Road,', 'Bodija, Ibadan, Oyo State, Nigeria'],
+    lines: ['Nyasorgbor House, 14 Broadcasting Road,', 'Bodija, Ibadan, Oyo State, Nigeria'],
   },
   {
     icon: Phone,
     title: 'Telephone',
-    lines: ['+234 805 000 0000', '+234 700 OLAWALE (652 9253)'],
+    lines: ['+234 805 000 0000', '+234 700 NYASORG (692 7674)'],
   },
   {
     icon: Mail,
     title: 'Email',
-    lines: ['info@olawalefoundation.org', 'press@olawalefoundation.org'],
+    lines: ['info@nyasorgborfoundation.org', 'press@nyasorgborfoundation.org'],
   },
   {
     icon: Clock,
@@ -110,7 +110,7 @@ export function ContactView() {
       <PageHero
         eyebrow="Contact"
         title="Get in Touch"
-        description="Whether you would like to volunteer, donate, partner, or simply share a memory of Samuel, we would be glad to hear from you."
+        description="Whether you would like to volunteer, donate, partner, or simply share a memory of Edem, we would be glad to hear from you."
         image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2400&auto=format&fit=crop"
       />
 
@@ -293,7 +293,7 @@ export function ContactView() {
                     <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-gold-dark dark:text-gold" />
                     <div>
                       <div className="font-serif text-base text-navy dark:text-gold">
-                        Olawale House
+                        Nyasorgbor House
                       </div>
                       <p className="mt-1 text-sm text-muted-foreground">
                         14 Broadcasting Road, Bodija, Ibadan, Oyo State, Nigeria
@@ -335,8 +335,8 @@ export function ContactView() {
                     please contact the Editorial Office directly.
                   </p>
                   <div className="mt-3 text-sm">
-                    <a href="mailto:press@olawalefoundation.org" className="font-medium text-navy dark:text-gold hover:underline">
-                      press@olawalefoundation.org
+                    <a href="mailto:press@nyasorgborfoundation.org" className="font-medium text-navy dark:text-gold hover:underline">
+                      press@nyasorgborfoundation.org
                     </a>
                     <div className="text-muted-foreground">+234 805 000 0001</div>
                   </div>

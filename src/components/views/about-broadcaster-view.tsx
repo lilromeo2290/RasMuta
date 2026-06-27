@@ -18,13 +18,13 @@ const contributions = [
     icon: Radio,
     title: 'To Broadcasting',
     body:
-      'Samuel redefined what it meant to anchor the news in West Africa. His unhurried baritone, his insistence on understanding every sentence before he read it, and his refusal to bend a fact for convenience became the standard against which a generation of broadcasters measured themselves. He anchored more than 9,000 evening bulletins over a 46-year career.',
+      'Edem redefined what it meant to anchor the news in West Africa. His unhurried baritone, his insistence on understanding every sentence before he read it, and his refusal to bend a fact for convenience became the standard against which a generation of broadcasters measured themselves. He anchored more than 9,000 evening bulletins over a 46-year career.',
   },
   {
     icon: BookOpen,
     title: 'To Journalism Education',
     body:
-      'Through the Olawale School of Broadcast Journalism, which he founded in 2004, he personally trained more than 600 journalists from low-income backgrounds on tuition-free places. The School\'s curriculum and its residential mentorship week became the template adopted by three other schools across the continent.',
+      'Through the Nyasorgbor School of Broadcast Journalism, which he founded in 2004, he personally trained more than 600 journalists from low-income backgrounds on tuition-free places. The School\'s curriculum and its residential mentorship week became the template adopted by three other schools across the continent.',
   },
   {
     icon: Users,
@@ -163,7 +163,7 @@ export function AboutBroadcasterView() {
           <SectionHeading
             eyebrow="Recognition"
             title="Awards & Achievements"
-            description="A selection of the honours conferred on Samuel A. Olawale by national, continental, and international bodies across his career."
+            description="A selection of the honours conferred on Edem D. Nyasorgbor by national, continental, and international bodies across his career."
           />
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {awards.map((a, idx) => (
@@ -207,7 +207,7 @@ export function AboutBroadcasterView() {
           <SectionHeading
             eyebrow="Beyond the Studio"
             title="Contributions to Journalism, Broadcasting & Society"
-            description="Samuel's impact reached far beyond the newsroom — into classrooms, community stations, boardrooms, and the structures that sustain a free press."
+            description="Edem's impact reached far beyond the newsroom — into classrooms, community stations, boardrooms, and the structures that sustain a free press."
           />
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
             {contributions.map((c, idx) => (

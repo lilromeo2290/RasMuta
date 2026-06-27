@@ -21,11 +21,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Samuel A. Olawale Memorial Foundation | Honoring a Broadcasting Legend",
+  title: "Edem D. Nyasorgbor Memorial Foundation | Honoring a Broadcasting Legend",
   description:
-    "The Samuel A. Olawale Memorial Foundation honors the life and legacy of a renowned broadcaster through scholarships, journalism mentorship, community outreach, and the annual Memorial Lecture.",
+    "The Edem D. Nyasorgbor Memorial Foundation honors the life and legacy of a renowned broadcaster through scholarships, journalism mentorship, community outreach, and the annual Memorial Lecture.",
   keywords: [
-    "Samuel Olawale",
+    "Edem Nyasorgbor",
     "memorial foundation",
     "broadcasting legend",
     "journalism mentorship",
@@ -33,17 +33,17 @@ export const metadata: Metadata = {
     "memorial lecture",
     "media excellence",
   ],
-  authors: [{ name: "Samuel A. Olawale Memorial Foundation" }],
+  authors: [{ name: "Edem D. Nyasorgbor Memorial Foundation" }],
   openGraph: {
-    title: "Samuel A. Olawale Memorial Foundation",
+    title: "Edem D. Nyasorgbor Memorial Foundation",
     description:
-      "Honoring the life, work, and enduring legacy of broadcaster Samuel A. Olawale through education, mentorship, and community development.",
-    siteName: "Olawale Memorial Foundation",
+      "Honoring the life, work, and enduring legacy of broadcaster Edem D. Nyasorgbor through education, mentorship, and community development.",
+    siteName: "Nyasorgbor Memorial Foundation",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samuel A. Olawale Memorial Foundation",
+    title: "Edem D. Nyasorgbor Memorial Foundation",
     description:
       "Honoring a broadcasting legend through scholarships, journalism mentorship, and community development.",
   },
