@@ -7,7 +7,6 @@ import { FoundationOverview } from '@/components/sections/foundation-overview'
 import { FeaturedPrograms } from '@/components/sections/featured-programs'
 import { Statistics } from '@/components/sections/statistics'
 import { Testimonials } from '@/components/sections/testimonials'
-import { DonateCTA } from '@/components/sections/donate-cta'
 
 export function HomeView() {
   return (
@@ -19,7 +18,6 @@ export function HomeView() {
       <FeaturedPrograms />
       <Statistics />
       <Testimonials />
-      <DonateCTA />
     </>
   )
 }
