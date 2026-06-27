@@ -399,7 +399,7 @@ export const upcomingEvents = [
     location: 'Denu Chicago Basic School, Denu, Ketu South',
     description:
       'On 29th June 2026, the Ras Muta Foundation and Nugoryiyi Foundation will officially cut sod for the construction of a four-unit modern toilet facility at Denu Chicago Basic School. This important project aims to improve sanitation, hygiene, and the overall learning environment for pupils and staff. The facility will help address challenges associated with inadequate toilet infrastructure, promote good health practices, and provide a safer and more dignified environment for the school community. The initiative demonstrates the commitment of both foundations to supporting education and community development in Denu. The sod-cutting ceremony marks the beginning of a project that is expected to have a lasting positive impact on the school and its students. The general public is warmly invited.',
-    image: '/event-banner.jpg',
+    image: '/sod.jpg',
     featured: true,
   },
 ]
