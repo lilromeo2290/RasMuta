@@ -60,7 +60,7 @@ export function NewsView() {
         eyebrow="News & Publications"
         title="The Foundation, in Print"
         description="Press releases, news, annual reports, and publications from the Foundation — and the restored archive of Edem D. Nyasorgbor's own work."
-        image="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-news.svg"
       />
 
       {/* Search + filter */}

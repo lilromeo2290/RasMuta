@@ -48,7 +48,7 @@ export function GalleryView() {
         eyebrow="In Memoriam"
         title="Memorial Gallery"
         description="Photographs, broadcasts, and documentaries from a 22-year career — preserved by the Foundation for the generations he inspired."
-        image="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-gallery.svg"
       />
 
       <section className="memorial-pattern py-20 sm:py-24">

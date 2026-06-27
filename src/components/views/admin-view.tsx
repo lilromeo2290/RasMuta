@@ -116,7 +116,7 @@ export function AdminView() {
         eyebrow="Admin Dashboard"
         title="Foundation Management Console"
         description="An at-a-glance view of donations, volunteer applications, contact messages, and newsletter subscribers. A demonstration CMS for staff and trustees."
-        image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-admin.svg"
       />
 
       <section className="memorial-pattern py-20 sm:py-24">

@@ -144,7 +144,7 @@ export function VolunteerView() {
         eyebrow="Volunteer"
         title="Lend Your Hands to the Work"
         description="More than 320 volunteers already give their time and skills to the Foundation — at events, in newsrooms, in the field, and behind the scenes."
-        image="https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-volunteer.svg"
       />
 
       {/* Why volunteer */}

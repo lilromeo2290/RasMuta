@@ -108,7 +108,7 @@ export function DonateView() {
         eyebrow="Donate"
         title="Carry the Candle Forward"
         description="Your gift funds scholarships, mentorship, community radio, and the institutions Edem D. Nyasorgbor spent a lifetime building."
-        image="https://images.unsplash.com/photo-1532622788357-787e1f3a16c5?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-donate.svg"
       />
 
       {/* Progress band */}

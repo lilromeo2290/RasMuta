@@ -37,7 +37,7 @@ export function ProgramsView() {
         eyebrow="Programmes & Projects"
         title="Carrying the Candle, Programme by Programme"
         description="Six programmes, every one of them measured by the lives it touches. Read about them below — and find the one your support will help grow."
-        image="https://images.unsplash.com/photo-1532622788357-787e1f3a16c5?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-programs.svg"
       />
 
       {programs.map((p, idx) => {

@@ -12,13 +12,13 @@ export const broadcaster = {
   quote:
     'A broadcaster\'s voice is a candle in the dark — it must never flicker for those who depend on its light to find the truth.',
   heroImage:
-    'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2400&auto=format&fit=crop',
+    '/placeholders/hero-broadcaster.svg',
   portrait: '/muta.png',
   photos: [
     { src: '/muta.png', caption: 'Edem Divine Nyasorgbor — Ras Muta' },
-    { src: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1200&auto=format&fit=crop', caption: 'On the airwaves of the Volta Region' },
-    { src: 'https://images.unsplash.com/photo-1581092160562-40aa08e298a7?q=80&w=1200&auto=format&fit=crop', caption: 'A life behind the microphone' },
-    { src: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1200&auto=format&fit=crop', caption: 'In the studio — a 22-year career on the air' },
+    { src: '/placeholders/photo-airwaves.svg', caption: 'On the airwaves of the Volta Region' },
+    { src: '/placeholders/photo-microphone.svg', caption: 'A life behind the microphone' },
+    { src: '/placeholders/photo-studio.svg', caption: 'In the studio — a 22-year career on the air' },
   ],
   intro:
     'For more than two decades, Edem Divine Nyasorgbor\'s voice travelled across the airwaves of the Volta Region, Ghana and Togo, carrying entertainment, music, and the conscience of a generation. He anchored the airwaves through entertainment, elections, transitions, triumphs, and tragedies — always calm, always clear, always fair.',
@@ -167,42 +167,42 @@ export const trustees = [
     role: 'Founder & Chair of Trustees',
     bio:
       'Wife of Edem D. Nyasorgbor. Married on 1st April 2012 at St. James AME Zion Church. Mother of their five children: Desmond, Delphine, Enyonam, Darlington, and Desire. Co-founder of the RAS MUTA Foundation.',
-    avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-1.svg',
   },
   {
     name: 'Dr. Tunde Bakare',
     role: 'Vice-Chair',
     bio:
       'Veteran journalist and former Director of News at the Nigerian Television Authority. Chairman of the Editorial Council of the Nyasorgbor School.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-2.svg',
   },
   {
     name: 'Ms. Ngozi Eze',
     role: 'Executive Director',
     bio:
       'Award-winning investigative journalist and former CNN Africa bureau chief. Leads the day-to-day operations of the Foundation.',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-3.svg',
   },
   {
     name: 'Chief Olusegun Adeniyi',
     role: 'Trustee',
     bio:
       'Chairman of the Editorial Board of ThisDay Newspapers. Former Special Adviser on Communications to the President.',
-    avatar: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=600&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-4.svg',
   },
   {
     name: 'Prof. Aisha Mohammed',
     role: 'Trustee',
     bio:
       'Professor of Mass Communication, Bayero University Kano. Specialist in media ethics and gender representation.',
-    avatar: 'https://images.unsplash.com/photo-1531123414780-f74242c2b052?q=80&w=600&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-5.svg',
   },
   {
     name: 'Mr. Kwame Asante',
     role: 'Trustee (International)',
     bio:
       'CEO of Asante Media Group, Accra. Former Secretary-General of the African Broadcasting Union.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-6.svg',
   },
 ]
 
@@ -223,7 +223,7 @@ export const programs = [
     description:
       'The flagship Scholarship Programme was established in 2024 with the founding gift of the Nyasorgbor family. It provides four-year, full-tuition scholarships at accredited Nigerian and West African universities, together with a small monthly stipend, textbook allowance, and an annual residential mentorship week at the Nyasorgbor School of Broadcast Journalism. Preference is given to students from communities historically under-represented in newsroom staffing.',
     impact: '142 scholars since 2024',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop',
+    image: '/placeholders/program-scholarships.svg',
     highlights: [
       '142 scholars enrolled across 11 universities',
       '$420,000 disbursed in tuition and stipends in 2024',
@@ -240,7 +240,7 @@ export const programs = [
     description:
       'Each cohort of 60 early-career journalists is matched one-to-one with a senior mentor for a structured twelve-month cycle. The programme includes monthly virtual clinics, quarterly masterclasses, an assigned reporting project, and a final capstone published in a partner newsroom. Mentors include editors from the BBC, Al Jazeera, Reuters, Premium Times, and the Mail & Guardian.',
     impact: '180 journalists mentored',
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop',
+    image: '/placeholders/program-mentorship.svg',
     highlights: [
       '180 journalists across three cohorts',
       '120 capstone investigations published',
@@ -257,7 +257,7 @@ export const programs = [
     description:
       'The Community Outreach Programme provides small grants (typically $2,500 – $15,000), equipment donations, and on-site training visits to community radio stations and small rural newsrooms. The programme prioritises stations serving audiences with limited access to mainstream media — including pastoralist communities, fishing settlements, and internally displaced persons.',
     impact: '38 community stations supported',
-    image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop',
+    image: '/placeholders/program-community.svg',
     highlights: [
       '38 community stations across 14 states',
       '$310,000 in grants disbursed',
@@ -274,7 +274,7 @@ export const programs = [
     description:
       'A six-week intensive bootcamp that introduces young people to media literacy, mobile journalism, fact-checking, and basic audio production. Each cohort of 100 participants graduates with a portfolio of three published pieces and a micro-grant to produce one community story of their own choosing.',
     impact: '900 young people trained',
-    image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1600&auto=format&fit=crop',
+    image: '/placeholders/program-youth.svg',
     highlights: [
       '900 graduates across nine cities',
       '2,700 published community stories',
@@ -291,7 +291,7 @@ export const programs = [
     description:
       'Held each August in the week of the anniversary of Edem\'s passing, the Nyasorgbor Awards honour outstanding work in seven categories — including Investigative Reporting, Broadcast Journalism, Photojournalism, and a special category for Community Journalism. The Awards carry a cash prize, a residency at the Nyasorgbor School, and publication in partner outlets.',
     impact: '54 winners since 2024',
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop',
+    image: '/placeholders/program-awards.svg',
     highlights: [
       '7 award categories',
       '54 winners across two editions',
@@ -308,7 +308,7 @@ export const programs = [
     description:
       'A twin-track programme: in the wider community, the Foundation funds annual health camps and clean-water projects in the communities served by its partner community-radio stations. Within the journalism fraternity, it provides welfare grants, medical subsidies, and a small retirement home for journalists who, like Edem, gave a lifetime to the craft and now have little to show for it.',
     impact: '12,400 patients treated',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=1600&auto=format&fit=crop',
+    image: '/placeholders/program-health.svg',
     highlights: [
       '12,400 patients treated at 18 health camps',
       '9 boreholes and clean-water projects',
@@ -333,42 +333,42 @@ export const testimonials = [
     role: 'Widow • Founder & Chair of Trustees',
     quote:
       'Edem used to say that the broadcaster does not own the microphone — he only holds it in trust for the people. This Foundation exists to keep that trust alive. I am humbled every day by the young journalists who carry his voice forward.',
-    avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-1.svg',
   },
   {
     author: 'Funmi Iyanda',
     role: 'Veteran Broadcaster',
     quote:
       'Edem was the broadcaster every broadcaster wanted to grow up to be. He was the standard. The Foundation\'s mentorship programme is the most fitting tribute I can imagine — because he was, above all else, a teacher.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-2.svg',
   },
   {
     author: 'Chidinma Okoye',
     role: '2024 Scholar, University of Lagos',
     quote:
       'Without the Nyasorgbor Scholarship, I would not be in a newsroom today. The Foundation did not only pay my tuition — they gave me a mentor, a community, and a standard to live up to.',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-3.svg',
   },
   {
     author: 'John Campbell',
     role: 'Former Nigeria Correspondent, BBC',
     quote:
       'Across three decades of reporting from Lagos, Abuja, and Kano, I learned more from a single fifteen-minute conversation with Edem than from many formal briefings. The Memorial Lecture keeps that conversation going.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-4.svg',
   },
   {
     author: 'Mallam Yusuf Ibrahim',
     role: 'Station Manager, Garkida Community Radio',
     quote:
       'When our transmitter was destroyed in the floods, the Foundation did not just send money — they came. They sent an engineer. They trained three of our staff. They put us back on the air. That is the Edem we knew.',
-    avatar: 'https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=200&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-5.svg',
   },
   {
     author: 'Hon. Lisa Okonkwo',
     role: 'Member, House Committee on Information',
     quote:
       'The Foundation has become, in just two years, the most respected independent voice for media development in the country. Their annual report is required reading on the Committee.',
-    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop',
+    avatar: '/placeholders/avatar-6.svg',
   },
 ]
 

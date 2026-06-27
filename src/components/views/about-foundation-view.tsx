@@ -66,7 +66,7 @@ export function AboutFoundationView() {
         eyebrow="The Foundation · Established 2022"
         title="Celebration of a Legend"
         description="Established by his family, his colleagues, and the trustees of his estate to carry forward the work he most loved — and to keep his microphone in the hands of those who will use it well."
-        image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-foundation.svg"
       />
 
       {/* History */}

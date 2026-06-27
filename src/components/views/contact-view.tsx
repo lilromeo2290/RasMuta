@@ -111,7 +111,7 @@ export function ContactView() {
         eyebrow="Contact"
         title="Get in Touch"
         description="Whether you would like to volunteer, donate, partner, or simply share a memory of Edem, we would be glad to hear from you."
-        image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2400&auto=format&fit=crop"
+        image="/placeholders/hero-contact.svg"
       />
 
       {/* Contact info cards */}
