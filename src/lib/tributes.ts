@@ -44,6 +44,7 @@ export const tributes: Tribute[] = [
     title: 'Tribute by Children',
     byline: 'Desmond, Delphine, Enyonam, Darlington & Desire Nyasorgbor',
     relationship: 'Children of Edem Divine Nyasorgbor',
+    image: '/tribute-children.png',
     body: [
       'Daddy, you were our first hero — long before the airwaves ever knew your name. You were the one who taught us to ride bicycles, to say our prayers, to stand up straight, and to treat every person with the same respect regardless of who they were. You did not just tell us how to live; you showed us, every single day.',
       'You called us your five blessings. You prayed over each of us by name. You sat through school open-days even when your shift had started at dawn. You believed in us before we believed in ourselves, and you corrected us with a firmness that never once made us doubt your love.',
