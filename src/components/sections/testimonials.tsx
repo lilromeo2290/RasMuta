@@ -73,26 +73,28 @@ export function Testimonials() {
             </AnimatePresence>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-3">
-            <Button variant="outline" size="icon" onClick={prev} aria-label="Previous testimonial">
-              <ChevronLeft className="h-4 w-4" />
-            </Button>
-            <div className="flex gap-1.5">
-              {testimonials.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActive(i)}
-                  aria-label={`Go to testimonial ${i + 1}`}
-                  className={`h-2 rounded-full transition-all ${
-                    i === active ? 'w-8 bg-gold' : 'w-2 bg-muted-foreground/40 hover:bg-muted-foreground'
-                  }`}
-                />
-              ))}
+          {count > 1 && (
+            <div className="mt-8 flex items-center justify-center gap-3">
+              <Button variant="outline" size="icon" onClick={prev} aria-label="Previous testimonial">
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+              <div className="flex gap-1.5">
+                {testimonials.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActive(i)}
+                    aria-label={`Go to testimonial ${i + 1}`}
+                    className={`h-2 rounded-full transition-all ${
+                      i === active ? 'w-8 bg-gold' : 'w-2 bg-muted-foreground/40 hover:bg-muted-foreground'
+                    }`}
+                  />
+                ))}
+              </div>
+              <Button variant="outline" size="icon" onClick={next} aria-label="Next testimonial">
+                <ChevronRight className="h-4 w-4" />
+              </Button>
             </div>
-            <Button variant="outline" size="icon" onClick={next} aria-label="Next testimonial">
-              <ChevronRight className="h-4 w-4" />
-            </Button>
-          </div>
+          )}
         </div>
       </div>
     </section>

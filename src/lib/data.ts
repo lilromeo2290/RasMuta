@@ -335,41 +335,6 @@ export const testimonials = [
       'Edem used to say that the broadcaster does not own the microphone — he only holds it in trust for the people. This Foundation exists to keep that trust alive. I am humbled every day by the young journalists who carry his voice forward.',
     avatar: '/placeholders/avatar-1.svg',
   },
-  {
-    author: 'Funmi Iyanda',
-    role: 'Veteran Broadcaster',
-    quote:
-      'Edem was the broadcaster every broadcaster wanted to grow up to be. He was the standard. The Foundation\'s mentorship programme is the most fitting tribute I can imagine — because he was, above all else, a teacher.',
-    avatar: '/placeholders/avatar-2.svg',
-  },
-  {
-    author: 'Chidinma Okoye',
-    role: '2024 Scholar, University of Lagos',
-    quote:
-      'Without the Nyasorgbor Scholarship, I would not be in a newsroom today. The Foundation did not only pay my tuition — they gave me a mentor, a community, and a standard to live up to.',
-    avatar: '/placeholders/avatar-3.svg',
-  },
-  {
-    author: 'John Campbell',
-    role: 'Former Nigeria Correspondent, BBC',
-    quote:
-      'Across three decades of reporting from Lagos, Abuja, and Kano, I learned more from a single fifteen-minute conversation with Edem than from many formal briefings. The Memorial Lecture keeps that conversation going.',
-    avatar: '/placeholders/avatar-4.svg',
-  },
-  {
-    author: 'Mallam Yusuf Ibrahim',
-    role: 'Station Manager, Garkida Community Radio',
-    quote:
-      'When our transmitter was destroyed in the floods, the Foundation did not just send money — they came. They sent an engineer. They trained three of our staff. They put us back on the air. That is the Edem we knew.',
-    avatar: '/placeholders/avatar-5.svg',
-  },
-  {
-    author: 'Hon. Lisa Okonkwo',
-    role: 'Member, House Committee on Information',
-    quote:
-      'The Foundation has become, in just two years, the most respected independent voice for media development in the country. Their annual report is required reading on the Committee.',
-    avatar: '/placeholders/avatar-6.svg',
-  },
 ]
 
 export const upcomingEvents = [
