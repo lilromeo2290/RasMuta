@@ -44,7 +44,7 @@ export function AboutBroadcasterView() {
   return (
     <>
       <PageHero
-        eyebrow="In Memoriam · 1979 – 2023"
+        eyebrow="In Memoriam · 1979 – 2022"
         title={broadcaster.name}
         description={`${broadcaster.title}. Born ${broadcaster.birth} in ${broadcaster.birthplace}. Passed away ${broadcaster.death}.`}
         image={broadcaster.heroImage}

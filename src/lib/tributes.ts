@@ -11,6 +11,8 @@ export interface Tribute {
   byline: string
   /** Optional relationship / role line shown under the byline. */
   relationship?: string
+  /** Optional portrait image shown alongside the tribute. */
+  image?: string
   /** The full tribute text, broken into paragraphs. */
   body: string[]
 }
@@ -22,11 +24,18 @@ export const tributes: Tribute[] = [
     title: 'Tribute by Wife',
     byline: 'Mrs. Yvonne Edinam Nyasorgbor (née Klutsey)',
     relationship: 'Wife of Edem Divine Nyasorgbor',
+    image: '/tribute-wife.png',
     body: [
-      'To the love of my life, my soulmate, and the father of our children — words will never be enough to capture the depth of the loss I feel. Eighteen years of marriage, and still I wake each morning reaching for you beside me. You were my home, my anchor, and my safest place.',
-      'You taught me what it means to be loved without condition. You taught our children — Desmond, Delphine, Enyonam, Darlington, and Desire — what it means to be a father who is present, gentle, and sure. Every bedtime story, every prayer at the table, every quiet word of counsel — these are the threads of the legacy you have left woven into our home.',
-      'The world remembers your voice on the airwaves. I remember your voice in the kitchen at dawn, humming the songs of your youth. I remember your voice reading Scripture to the children. I remember your voice telling me, again and again, that everything would be alright. And it will be — because you raised us to be strong, and because the God you feared and loved is the same God who holds us now.',
-      'Rest well, my love. The microphone is silent now, but the candle you lit in our home will never go out. Until we meet again.',
+      '"He will wipe away every tear from their eyes and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away." — Revelation 21:4',
+      'It is with a grieving heart that I stand here to pay homage and bid a final FAREWELL to my DEAR EDEM. I wish it were a dream, a nightmare from which I would wake up to see my EDEM physically in front of me with his charming and captivating smile. But sadly, no! It cannot be.',
+      'I simply and affectionately call my husband EDEM, who I met for the first time at his usual charming element, capturing the airwaves with his booming and melodious voice which I found irresistible. That was when it began.',
+      'We got attracted to each other and this attraction metamorphosed into courtship. It was a whirlwind development laced with love, romance — a Romeo and Juliet type of relationship. We were always there for each other, through thick or thin. Our marriage was blessed at St. James AME Zion Church on 1st April 2012. The merciful God has favored and blessed us with four lovely children, two boys and two girls. As a God-fearing couple, Edem, the children and I would go to church every Sunday, all things being normal. On occasions like Christmas festivities, Easter picnics and public holidays, the family would go to places like the beach, resorts and others for relaxation and fun.',
+      'Yes, just as the beautiful Rose Flower has thorns, our marriage has not been always smooth sailing. We had challenges, disagreements and obstacles which we overcame. We survived toxic rumors and idle gossip meant to break us apart. We were careful with subtle interferences from friends, family members and other relatives. However, we took pieces of advice on board which could help us nourish our marriage.',
+      'Not too long ago, I lost my DEAR MOTHER, who happened to be an auntie of EDEM. I still mourn her, and the tears have not dried from my eyes. Sadly, another calamity has befallen me. Late in 2020, my husband Edem\'s health started failing; it was around the same time my mother also got sick. Everything was done to help Edem regain his health. He went from one hospital to the other. The family offered prayers, and the church also interceded. Edem\'s junior brother took him to Trafalgar Regional Hospital at Ho for specialist medical care, whilst I stayed behind at home to attend to the four children, to go to school and see to their daily needs. I commuted with my husband on a daily basis, likewise the children. Edem would assure us that he would soon be home to be with us. He was always cheerful and lively anytime we spoke. His brother assured us that he would be fine.',
+      'But alas, on 16th September 2022 I had the sad and unfortunate call from my brother-in-law that my husband Edem had succumbed to his sickness. Edem had died.',
+      'Another tragedy. I have lost not only a husband, but a companion. My children have lost a dear father who they loved a lot. Tears have welled into my eyes again so soon after my mother\'s death. My heart bleeds, my four children are devastated and in grief.',
+      'Our Edem is gone. God knows best. He will cater for us. The pain, we shall survive by God\'s grace. We have the hope and belief that Edem will Rest in Perfect Peace in the arms of the Lord.',
+      'Edem, xɛ de nyuie eye na deidzor le mutifafa me.',
     ],
   },
   {

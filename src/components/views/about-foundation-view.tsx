@@ -63,7 +63,7 @@ export function AboutFoundationView() {
   return (
     <>
       <PageHero
-        eyebrow="The Foundation · Established 2023"
+        eyebrow="The Foundation · Established 2022"
         title="Celebration of a Legend"
         description="Established by his family, his colleagues, and the trustees of his estate to carry forward the work he most loved — and to keep his microphone in the hands of those who will use it well."
         image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2400&auto=format&fit=crop"
@@ -79,7 +79,7 @@ export function AboutFoundationView() {
           />
           <div className="mt-10 space-y-5">
             <p className="text-base leading-relaxed text-muted-foreground">
-              In the days following Edem D. Nyasorgbor’s passing on 21 August 2023, his family and
+              In the days following Edem D. Nyasorgbor’s passing on 16 September 2022, his family and
               his closest colleagues received hundreds of messages from newsrooms, schools,
               community stations, and listeners across the world. The most common request was
               simple: that the work he had begun — the teaching, the scholarships, the
@@ -315,32 +315,49 @@ export function AboutFoundationView() {
                   viewport={{ once: true, margin: '-60px' }}
                   transition={{ duration: 0.45, delay: idx * 0.05 }}
                   onClick={() => setActiveTributeId(t.id)}
-                  className={`text-left rounded-2xl border bg-card p-6 transition-all lift-on-hover ${
+                  className={`text-left rounded-2xl border bg-card transition-all lift-on-hover overflow-hidden ${
                     isActive ? 'border-gold ring-2 ring-gold/30' : 'border-border'
                   }`}
                   aria-pressed={isActive}
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-gradient ring-1 ring-gold/40">
-                      <Icon className="h-5 w-5 text-gold" />
+                  {t.image && (
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      <img
+                        src={t.image}
+                        alt={t.byline}
+                        className="h-full w-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 to-transparent" />
+                      <div className="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-navy-gradient ring-1 ring-gold/50">
+                        <Icon className="h-4 w-4 text-gold" />
+                      </div>
                     </div>
-                    <div className="text-xs font-semibold uppercase tracking-wider text-gold-dark dark:text-gold">
-                      Tribute {String(idx + 1).padStart(2, '0')}
-                    </div>
-                  </div>
-                  <h3 className="mt-4 font-serif text-lg text-navy dark:text-gold">
-                    {t.title}
-                  </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{t.byline}</p>
-                  {t.relationship && (
-                    <p className="mt-0.5 text-xs text-muted-foreground/80">{t.relationship}</p>
                   )}
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground line-clamp-3">
-                    {t.body[0]}
-                  </p>
-                  <span className="mt-4 inline-block text-xs font-semibold uppercase tracking-wider text-navy dark:text-gold">
-                    {isActive ? 'Reading…' : 'Read tribute →'}
-                  </span>
+                  <div className="p-6">
+                    <div className="flex items-center gap-3">
+                      {!t.image && (
+                        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-gradient ring-1 ring-gold/40">
+                          <Icon className="h-5 w-5 text-gold" />
+                        </div>
+                      )}
+                      <div className="text-xs font-semibold uppercase tracking-wider text-gold-dark dark:text-gold">
+                        Tribute {String(idx + 1).padStart(2, '0')}
+                      </div>
+                    </div>
+                    <h3 className="mt-4 font-serif text-lg text-navy dark:text-gold">
+                      {t.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-muted-foreground">{t.byline}</p>
+                    {t.relationship && (
+                      <p className="mt-0.5 text-xs text-muted-foreground/80">{t.relationship}</p>
+                    )}
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground line-clamp-3">
+                      {t.body.find(p => !p.startsWith('"')) ?? t.body[0]}
+                    </p>
+                    <span className="mt-4 inline-block text-xs font-semibold uppercase tracking-wider text-navy dark:text-gold">
+                      {isActive ? 'Reading…' : 'Read tribute →'}
+                    </span>
+                  </div>
                 </motion.button>
               )
             })}
@@ -376,19 +393,32 @@ export function AboutFoundationView() {
 
                   {/* Body */}
                   <div className="px-6 py-10 sm:px-10 sm:py-12">
-                    <div className="space-y-5">
-                      {activeTribute.body.map((para, idx) => (
-                        <p
-                          key={idx}
-                          className={`text-base leading-relaxed text-muted-foreground ${
-                            idx === 0
-                              ? 'first-letter:font-serif first-letter:text-5xl first-letter:font-bold first-letter:text-navy dark:first-letter:text-gold first-letter:mr-2 first-letter:float-left'
-                              : ''
-                          }`}
-                        >
-                          {para}
-                        </p>
-                      ))}
+                    <div className={`grid gap-8 ${activeTribute.image ? 'lg:grid-cols-12' : ''}`}>
+                      {activeTribute.image && (
+                        <div className="lg:col-span-5">
+                          <div className="lg:sticky lg:top-28 overflow-hidden rounded-2xl ring-1 ring-border shadow-lg">
+                            <img
+                              src={activeTribute.image}
+                              alt={activeTribute.byline}
+                              className="w-full object-cover"
+                            />
+                          </div>
+                        </div>
+                      )}
+                      <div className={`space-y-5 ${activeTribute.image ? 'lg:col-span-7' : ''}`}>
+                        {activeTribute.body.map((para, idx) => (
+                          <p
+                            key={idx}
+                            className={`text-base leading-relaxed text-muted-foreground ${
+                              idx === 0 && !activeTribute.image
+                                ? 'first-letter:font-serif first-letter:text-5xl first-letter:font-bold first-letter:text-navy dark:first-letter:text-gold first-letter:mr-2 first-letter:float-left'
+                                : ''
+                            } ${idx === 0 && para.startsWith('"') ? 'font-serif text-lg italic text-foreground border-l-2 border-gold pl-4' : ''}`}
+                          >
+                            {para}
+                          </p>
+                        ))}
+                      </div>
                     </div>
 
                     {/* Footer navigation between tributes */}

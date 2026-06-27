@@ -46,7 +46,7 @@ export function Legacy() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-2 hidden sm:block rounded-xl bg-navy px-5 py-4 text-cream shadow-lg">
-                <div className="font-serif text-2xl text-gold">1979 – 2023</div>
+                <div className="font-serif text-2xl text-gold">1979 – 2022</div>
                 <div className="text-xs uppercase tracking-[0.18em] text-cream/80">
                   A life of service
                 </div>

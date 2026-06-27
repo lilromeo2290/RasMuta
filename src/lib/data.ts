@@ -7,7 +7,7 @@ export const broadcaster = {
   quoteAttribution: 'Rus Muta Foundation',
   title: 'Veteran Broadcaster • Disc Jockey • TV Host',
   birth: 'April 4, 1979',
-  death: 'August 21, 2023',
+  death: 'September 16, 2022',
   birthplace: 'Denu, Volta Region, Ghana',
   quote:
     'A broadcaster\'s voice is a candle in the dark — it must never flicker for those who depend on its light to find the truth.',
@@ -24,7 +24,7 @@ export const biography = [
   'In the early days of his tertiary education, Edem had a brief engagement with Garden City Radio in Kumasi as a Marketing Officer for two months (October–November 1998). He was a lover of music, and his love for music and communication made him develop a strong interest in Disc Jockeying. He then began to spend his leisure time with a radio station on campus (Radio Link) where he gained a lot of experience in Disc Jockeying from November 1998 to July 2002. He rose to the rank of Studio Manager and presented the Reggae Suns Flash segment of the radio station while in school.',
   'After school, Edem worked for several radio stations and sometimes had to shuttle between two or three radio stations every day in his quest to entertain, inform, and educate the listening public. He worked for Light FM at Aflao from August 2003 to April 2004 as Studio Manager and Programs Director. His skills in Disc Jockeying and radio presentation earned him a lot of respect which cut across the border of Ghana into Togo. He was engaged by two radio stations in Lomé, Togo: Radio X-Solaire 107.5 FM from January 2002 to June 2010, and Fréquence 1 from May 2005 to May 2006.',
   'After several years of experience, he decided to settle and work for one radio station, hence his engagement with Radio Jubilee 106.9 FM in Keta from 2007 to June 2017 as Programs Director and radio presenter. He later decided to do his presentation on TV and got employed by Global FM and V1 TV as Head of Operations / Morning Show Host and TV Show Host from 2017 to 2020.',
-  'In 2004, he got married to Yvonne Edinam Klutsey. The union was blessed with four children. Edem was survived by five children: Desmond, Delphine, Enyonam, Darlington, and Desire.',
+  'On 1st April 2012, he got married to Yvonne Edinam Klutsey at St. James AME Zion Church. The union was blessed with four children. Edem was survived by five children: Desmond, Delphine, Enyonam, Darlington, and Desire.',
   'He was gentle and sociable. His gentility and kindness were unmistakable and easily felt by all. Every encounter with him was sure to leave a long-lasting sense of warmth, as his nature was very empowering. He was an outgoing and active person whose presence lit up every room he entered and every airwave he touched.',
 ]
 
@@ -72,10 +72,10 @@ export const careerMilestones = [
       'Worked for Light FM at Aflao from August 2003 to April 2004 as Studio Manager and Programs Director, shuttling between multiple stations daily.',
   },
   {
-    year: '2004',
+    year: '2012',
     title: 'Married Yvonne Edinam Klutsey',
     description:
-      'Married Yvonne Edinam Klutsey in 2004. The union was blessed with four children, and Edem was survived by five children: Desmond, Delphine, Enyonam, Darlington, and Desire.',
+      'On 1st April 2012, married Yvonne Edinam Klutsey at St. James AME Zion Church. The union was blessed with four children, and Edem was survived by five children: Desmond, Delphine, Enyonam, Darlington, and Desire.',
   },
   {
     year: '2005',
@@ -106,7 +106,7 @@ export const careerMilestones = [
 export const awards: { title: string; year: string; issuer: string; description: string }[] = []
 
 export const foundation = {
-  established: '2023',
+  established: '2022',
   legalName: 'The RAS MUTA Foundation',
   tagline: 'Carrying the candle forward.',
   mission:
@@ -160,7 +160,7 @@ export const trustees = [
     name: 'Mrs. Yvonne Edinam Nyasorgbor (née Klutsey)',
     role: 'Founder & Chair of Trustees',
     bio:
-      'Wife of Edem D. Nyasorgbor. Married in 2004. Mother of their five children: Desmond, Delphine, Enyonam, Darlington, and Desire. Co-founder of the RAS MUTA Foundation.',
+      'Wife of Edem D. Nyasorgbor. Married on 1st April 2012 at St. James AME Zion Church. Mother of their five children: Desmond, Delphine, Enyonam, Darlington, and Desire. Co-founder of the RAS MUTA Foundation.',
     avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop',
   },
   {

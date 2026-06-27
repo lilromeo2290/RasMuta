@@ -35,7 +35,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-navy/40 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gold backdrop-blur"
           >
-            In Memoriam · 1979 – 2023
+            In Memoriam · 1979 – 2022
           </motion.span>
 
           <motion.h1
