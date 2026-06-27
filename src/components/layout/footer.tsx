@@ -1,0 +1,211 @@
+'use client'
+
+import * as React from 'react'
+import { Radio, Mail, Phone, MapPin, Facebook, Twitter, Youtube, Instagram, Linkedin, MessageCircle, Send } from 'lucide-react'
+import { useAppStore } from '@/lib/store'
+import { navigation } from '@/lib/data'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { useToast } from '@/hooks/use-toast'
+
+export function Footer() {
+  const { setView } = useAppStore()
+  const { toast } = useToast()
+  const [email, setEmail] = React.useState('')
+  const [submitting, setSubmitting] = React.useState(false)
+
+  const onSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!email) return
+    setSubmitting(true)
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'footer' }),
+      })
+      const data = await res.json()
+      if (data.ok) {
+        toast({
+          title: 'Subscribed',
+          description: 'Thank you. You will receive Foundation updates by email.',
+        })
+        setEmail('')
+      } else {
+        toast({
+          title: 'Could not subscribe',
+          description: data.error || 'Please try again.',
+          variant: 'destructive',
+        })
+      }
+    } catch {
+      toast({
+        title: 'Network error',
+        description: 'Please try again later.',
+        variant: 'destructive',
+      })
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
+  return (
+    <footer className="mt-auto bg-navy text-cream">
+      {/* Newsletter band */}
+      <div className="border-b border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+          <div className="max-w-md">
+            <h3 className="font-serif text-2xl text-gold">Stay in touch</h3>
+            <p className="mt-2 text-sm text-cream/80">
+              Receive announcements, Memorial Lecture invitations, and the Foundation's
+              annual report. We will not share your email, and you may unsubscribe at any time.
+            </p>
+          </div>
+          <form onSubmit={onSubscribe} className="flex w-full max-w-md gap-2">
+            <Input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Your email address"
+              className="border-white/20 bg-white/10 text-cream placeholder:text-cream/60"
+              aria-label="Email address"
+            />
+            <Button
+              type="submit"
+              disabled={submitting}
+              className="bg-gold-gradient text-navy hover:opacity-90 font-semibold"
+            >
+              <Send className="mr-1 h-4 w-4" /> Subscribe
+            </Button>
+          </form>
+        </div>
+      </div>
+
+      {/* Main footer */}
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        {/* Brand */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-gold/50">
+              <Radio className="h-5 w-5 text-gold" />
+            </div>
+            <div>
+              <div className="font-serif text-base font-bold text-gold">
+                Samuel A. Olawale
+              </div>
+              <div className="text-[11px] uppercase tracking-[0.18em] text-cream/70">
+                Memorial Foundation
+              </div>
+            </div>
+          </div>
+          <p className="text-sm leading-relaxed text-cream/80">
+            Carrying the candle forward — honouring a broadcasting legend through
+            scholarships, mentorship, and the dignity of communities too often unheard.
+          </p>
+          <a
+            href="https://wa.me/2348000000000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-sm font-medium text-cream ring-1 ring-white/15 transition-colors hover:bg-white/15"
+          >
+            <MessageCircle className="h-4 w-4 text-green-400" /> Chat on WhatsApp
+          </a>
+        </div>
+
+        {/* Quick links */}
+        <nav className="space-y-3" aria-label="Footer">
+          <h4 className="font-serif text-sm font-semibold uppercase tracking-wider text-gold">
+            Explore
+          </h4>
+          <ul className="space-y-2 text-sm text-cream/80">
+            {navigation.map((item) => (
+              <li key={item.key}>
+                <button
+                  onClick={() => setView(item.key)}
+                  className="transition-colors hover:text-gold"
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Contact */}
+        <div className="space-y-3">
+          <h4 className="font-serif text-sm font-semibold uppercase tracking-wider text-gold">
+            Contact
+          </h4>
+          <ul className="space-y-3 text-sm text-cream/80">
+            <li className="flex items-start gap-2">
+              <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-gold" />
+              <span>
+                Olawale House, 14 Broadcasting Road,<br />
+                Bodija, Ibadan, Oyo State, Nigeria
+              </span>
+            </li>
+            <li className="flex items-center gap-2">
+              <Phone className="h-4 w-4 flex-shrink-0 text-gold" />
+              <span>+234 805 000 0000</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail className="h-4 w-4 flex-shrink-0 text-gold" />
+              <a href="mailto:info@olawalefoundation.org" className="hover:text-gold">
+                info@olawalefoundation.org
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Social */}
+        <div className="space-y-3">
+          <h4 className="font-serif text-sm font-semibold uppercase tracking-wider text-gold">
+            Follow
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
+              { icon: Twitter, label: 'X / Twitter', href: 'https://twitter.com' },
+              { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
+              { icon: Youtube, label: 'YouTube', href: 'https://youtube.com' },
+              { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
+            ].map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-cream ring-1 ring-white/15 transition-colors hover:bg-gold hover:text-navy"
+              >
+                <Icon className="h-4 w-4" />
+              </a>
+            ))}
+          </div>
+          <div className="mt-4">
+            <button
+              onClick={() => setView('admin')}
+              className="text-xs uppercase tracking-wider text-cream/60 transition-colors hover:text-gold"
+            >
+              Admin Dashboard
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-cream/70 sm:flex-row sm:px-6 lg:px-8">
+          <p>
+            &copy; {new Date().getFullYear()} The Samuel A. Olawale Memorial Foundation.
+            All rights reserved.
+          </p>
+          <p className="text-center sm:text-right">
+            In loving memory of Samuel Adeoye Olawale (1952&ndash;2023).
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
