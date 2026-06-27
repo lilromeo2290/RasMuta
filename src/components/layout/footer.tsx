@@ -141,8 +141,9 @@ export function Footer() {
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-gold" />
               <span>
-                Nyasorgbor House, 14 Broadcasting Road,<br />
-                Bodija, Ibadan, Oyo State, Nigeria
+                Nyasorgbor House,<br />
+                Denu Beach Road, opposite NHIS Office<br />
+                Ketu South
               </span>
             </li>
             <li className="flex items-center gap-2">

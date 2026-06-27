@@ -30,7 +30,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Office Address',
-    lines: ['Nyasorgbor House, 14 Broadcasting Road,', 'Bodija, Ibadan, Oyo State, Nigeria'],
+    lines: ['Nyasorgbor House,', 'Denu Beach Road, opposite NHIS Office', 'Ketu South'],
   },
   {
     icon: Phone,
@@ -283,7 +283,7 @@ export function ContactView() {
                 <div className="aspect-[4/3] w-full bg-muted">
                   <iframe
                     title="Foundation office location"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=3.89%2C7.39%2C3.99%2C7.45&layer=mapnik&marker=7.42%2C3.94"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=1.155%2C6.095%2C1.205%2C6.125&layer=mapnik&marker=6.110%2C1.180"
                     className="h-full w-full border-0"
                     loading="lazy"
                   />
@@ -296,7 +296,7 @@ export function ContactView() {
                         Nyasorgbor House
                       </div>
                       <p className="mt-1 text-sm text-muted-foreground">
-                        14 Broadcasting Road, Bodija, Ibadan, Oyo State, Nigeria
+                        Denu Beach Road, opposite NHIS Office, Ketu South
                       </p>
                     </div>
                   </div>
