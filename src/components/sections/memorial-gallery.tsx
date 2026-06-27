@@ -19,13 +19,16 @@ export function MemorialGallery() {
   const { setView } = useAppStore()
   const items = galleryItems.slice(0, 6)
 
+  // Hide the entire homepage preview section when there are no gallery items.
+  if (items.length === 0) return null
+
   return (
     <section className="bg-muted/40 py-20 sm:py-24" aria-label="Memorial gallery preview">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="In Memoriam"
           title="Memorial Gallery"
-          description="Photographs, broadcasts, and documentaries from a 46-year career — preserved for the generations he inspired."
+          description="Photographs, broadcasts, and documentaries from a 22-year career — preserved for the generations he inspired."
         />
 
         <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">

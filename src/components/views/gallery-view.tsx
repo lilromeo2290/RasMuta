@@ -47,7 +47,7 @@ export function GalleryView() {
       <PageHero
         eyebrow="In Memoriam"
         title="Memorial Gallery"
-        description="Photographs, broadcasts, and documentaries from a 46-year career — preserved by the Foundation for the generations he inspired."
+        description="Photographs, broadcasts, and documentaries from a 22-year career — preserved by the Foundation for the generations he inspired."
         image="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2400&auto=format&fit=crop"
       />
 
@@ -74,6 +74,19 @@ export function GalleryView() {
           </div>
 
           {/* Grid */}
+          {items.length === 0 ? (
+            <div className="mt-10 flex flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/50 px-6 py-20 text-center">
+              <Camera className="h-10 w-10 text-gold/50" aria-hidden="true" />
+              <h3 className="mt-4 font-serif text-xl text-navy dark:text-gold">
+                The gallery is being curated
+              </h3>
+              <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
+                Photographs, video tributes, audio archives, and documentaries from Edem Divine
+                Nyasorgbor's 22-year broadcasting career will be added here soon. Please check
+                back shortly.
+              </p>
+            </div>
+          ) : (
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {items.map((item, idx) => {
               const Icon =
@@ -121,6 +134,7 @@ export function GalleryView() {
               )
             })}
           </div>
+          )}
         </div>
       </section>
 

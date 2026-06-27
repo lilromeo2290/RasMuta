@@ -25,7 +25,7 @@ export function Legacy() {
         <SectionHeading
           eyebrow="A Life in Broadcasting"
           title="His Legacy"
-          description="A 46-year career in news — anchored, reported, hosted, and taught by one of West Africa's most respected voices."
+          description="A 22-year career on the airwaves — anchored, presented, hosted, and taught by one of the Volta Region's most respected voices."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-12">
