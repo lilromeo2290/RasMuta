@@ -59,7 +59,7 @@ export function EventsView() {
         eyebrow="Events"
         title="Upcoming Events & Memorial Lectures"
         description="Join us at the Memorial Lecture, the Candlelight Gala, mentorship masterclasses, remembrance ceremonies, and community health camps."
-        image="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2400&auto=format&fit=crop"
+        image="/event-banner.jpg"
       />
 
       {/* Featured event */}
