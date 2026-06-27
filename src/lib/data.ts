@@ -402,66 +402,6 @@ export const upcomingEvents = [
     image: '/sod.jpg',
     featured: true,
   },
-  {
-    id: 'memorial-lecture-2026',
-    title: 'The 2026 Edem D. Nyasorgbor Memorial Lecture',
-    category: 'memorial_lecture',
-    date: '2026-08-21',
-    time: '11:00',
-    location: 'International Conference Centre, Abuja',
-    description:
-      'The third annual Memorial Lecture, delivered this year by Mrs. Graça Machel on the theme "The Airwaves and the Public Trust." The Lecture is followed by the presentation of the 2026 Nyasorgbor Media Excellence Awards.',
-    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1600&auto=format&fit=crop',
-    featured: false,
-  },
-  {
-    id: 'fundraising-gala-2026',
-    title: 'The Candlelight Fundraising Gala',
-    category: 'fundraiser',
-    date: '2026-05-10',
-    time: '18:30',
-    location: 'Eko Hotel & Suites, Lagos',
-    description:
-      'The Foundation\'s signature fundraising evening, with dinner, music, a live auction, and the presentation of the Friend of the Foundation awards. Proceeds support the 2026 scholarship cohort.',
-    image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1600&auto=format&fit=crop',
-    featured: false,
-  },
-  {
-    id: 'mentorship-clinic-2026',
-    title: 'Mentorship Masterclass: Investigative Methods',
-    category: 'workshop',
-    date: '2026-03-28',
-    time: '10:00',
-    location: 'Nyasorgbor School of Broadcast Journalism, Ibadan',
-    description:
-      'A one-day masterclass led by the 2025 cohort mentors, with case studies from recent investigations. Open to active journalists and to alumni of the mentorship programme.',
-    image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1600&auto=format&fit=crop',
-    featured: false,
-  },
-  {
-    id: 'remembrance-2026',
-    title: 'Annual Remembrance Ceremony',
-    category: 'remembrance',
-    date: '2026-08-06',
-    time: '16:00',
-    location: 'All Saints Chapel, Ibadan',
-    description:
-      'A service of remembrance on the anniversary of Edem D. Nyasorgbor\'s final broadcast. Family, colleagues, scholars, and friends gather for readings, music, and the lighting of the Memorial Candle.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=1600&auto=format&fit=crop',
-    featured: false,
-  },
-  {
-    id: 'community-camp-2026',
-    title: 'Makurdi Health & Clean-Water Camp',
-    category: 'community',
-    date: '2026-04-18',
-    time: '08:00',
-    location: 'Wurukum Market Square, Makurdi',
-    description:
-      'A three-day health and clean-water camp for the community served by Radio Benue. Free screening, cervical and prostate cancer checks, and the commissioning of a new solar-powered borehole.',
-    image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1600&auto=format&fit=crop',
-    featured: false,
-  },
 ]
 
 export const galleryItems = [
