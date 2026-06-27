@@ -27,19 +27,19 @@ export function DonateCTA() {
             transition={{ duration: 0.6 }}
           >
             <span className="text-xs font-semibold uppercase tracking-[0.24em] text-gold-dark dark:text-gold">
-              The 2026 Appeal
+              Support the Foundation
             </span>
             <h2 className="mt-3 font-serif text-3xl font-bold text-navy dark:text-cream sm:text-4xl">
-              Help us reach this year's goal
+              Help us reach our goal
             </h2>
             <div className="mt-3">
               <span className="gold-divider" />
             </div>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              The 2026 appeal funds the next cohort of 142 scholars, the fourth mentorship
-              cohort of 60 journalists, and the Makurdi clean-water project. Every contribution
-              is receipted, reported, and directed to a programme Edem himself would have
-              endorsed without hesitation.
+              Every contribution is receipted, reported, and directed to a programme
+              Edem himself would have endorsed without hesitation — scholarships,
+              mentorship, community radio, and the institutions he spent a lifetime
+              building.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">

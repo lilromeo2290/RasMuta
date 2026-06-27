@@ -116,7 +116,7 @@ export function DonateView() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <span className="text-xs uppercase tracking-[0.24em] text-gold">
-              The 2026 Appeal · Progress
+              Donation Progress
             </span>
             <div className="mt-2 font-serif text-3xl font-bold sm:text-4xl">
               ${stats.donationReceived.toLocaleString()}{' '}
