@@ -13,8 +13,7 @@ export const broadcaster = {
     'A broadcaster\'s voice is a candle in the dark — it must never flicker for those who depend on its light to find the truth.',
   heroImage:
     'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2400&auto=format&fit=crop',
-  portrait:
-    'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=1200&auto=format&fit=crop',
+  portrait: '/muta.png',
   intro:
     'For more than four decades, Edem Devine Nyasorgbor\'s voice travelled across the airwaves of Volta Region, Ghana and Togo carrying the news, the hopes, and the conscience of a generation. He anchored the nation through entertainment, elections, transitions, triumphs, and tragedies — always calm, always clear, always fair.',
 }
