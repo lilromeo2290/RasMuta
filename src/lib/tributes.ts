@@ -128,6 +128,7 @@ export const tributes: Tribute[] = [
     title: 'Tribute by Amazing Love',
     byline: 'Amazing Love Schools — Class of 1994',
     relationship: 'Edem\'s alma mater, 1986–1994',
+    image: '/tribute-amazing-love.png',
     body: [
       'For all the memories we share as your mates and comrades, we all revere. We grew to find we have a love — an Amazing Love, very strong and will never fade away.',
       'To the living, I am gone; to the sorrowful, I will never return; to the angry, I was cheated; but to the happy, I am at peace; and to the faithful, I have never left.',
