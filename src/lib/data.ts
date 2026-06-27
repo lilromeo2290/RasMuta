@@ -14,6 +14,12 @@ export const broadcaster = {
   heroImage:
     'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2400&auto=format&fit=crop',
   portrait: '/muta.png',
+  photos: [
+    { src: '/muta.png', caption: 'Edem Divine Nyasorgbor — Ras Muta' },
+    { src: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1200&auto=format&fit=crop', caption: 'On the airwaves of the Volta Region' },
+    { src: 'https://images.unsplash.com/photo-1581092160562-40aa08e298a7?q=80&w=1200&auto=format&fit=crop', caption: 'A life behind the microphone' },
+    { src: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1200&auto=format&fit=crop', caption: 'In the studio — a 22-year career on the air' },
+  ],
   intro:
     'For more than two decades, Edem Divine Nyasorgbor\'s voice travelled across the airwaves of the Volta Region, Ghana and Togo, carrying entertainment, music, and the conscience of a generation. He anchored the airwaves through entertainment, elections, transitions, triumphs, and tragedies — always calm, always clear, always fair.',
 }

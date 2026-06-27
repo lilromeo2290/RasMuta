@@ -11,6 +11,7 @@ import {
 } from '@/lib/data'
 import { PageHero } from '@/components/shared/page-hero'
 import { SectionHeading } from '@/components/shared/section-heading'
+import { PhotoSlider } from '@/components/shared/photo-slider'
 import { Card, CardContent } from '@/components/ui/card'
 
 const contributions = [
@@ -56,13 +57,7 @@ export function AboutBroadcasterView() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <div className="sticky top-28 space-y-4">
-                <div className="overflow-hidden rounded-2xl ring-1 ring-border shadow-xl">
-                  <img
-                    src={broadcaster.portrait}
-                    alt={`Portrait of ${broadcaster.name}`}
-                    className="aspect-[4/5] w-full object-cover"
-                  />
-                </div>
+                <PhotoSlider photos={broadcaster.photos} alt={`Portrait of ${broadcaster.name}`} />
                 <blockquote className="rounded-xl border-l-4 border-gold bg-card p-5">
                   <p className="font-serif text-lg italic leading-relaxed text-foreground">
                     &ldquo;{broadcaster.quote}&rdquo;
