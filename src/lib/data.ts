@@ -455,7 +455,7 @@ export const stats = {
 export const navigation: { key: import('./store').ViewKey; label: string }[] = [
   { key: 'home', label: 'Home' },
   { key: 'about-broadcaster', label: 'About the Broadcaster' },
-  { key: 'about-foundation', label: 'About the Foundation' },
+  { key: 'about-foundation', label: 'Celebration of a Legend' },
   { key: 'programs', label: 'Programs' },
   { key: 'events', label: 'Events' },
   { key: 'gallery', label: 'Gallery' },
