@@ -335,6 +335,41 @@ export const testimonials = [
       'Edem used to say that the broadcaster does not own the microphone — he only holds it in trust for the people. This Foundation exists to keep that trust alive. I am humbled every day by the young journalists who carry his voice forward.',
     avatar: '/placeholders/avatar-1.svg',
   },
+  {
+    author: 'The Children',
+    role: 'Desmond, Delphine, Enyonam, Darlington & Desire',
+    quote:
+      'Daddy, you were our first hero — long before the airwaves ever knew your name. You did not just tell us how to live; you showed us, every single day.',
+    avatar: '/placeholders/avatar-2.svg',
+  },
+  {
+    author: 'The Nyasorgbor Family',
+    role: 'Brothers and sisters of Edem',
+    quote:
+      'Gone but not forgotten. We don\'t think of you as gone away — your journey just begun; life holds so many facets.',
+    avatar: '/placeholders/avatar-3.svg',
+  },
+  {
+    author: 'Jubilee Radio 106.9 MHz, Keta',
+    role: 'Directors, Management and Staff',
+    quote:
+      'The life of one we love is never lost. Its influence goes through all the lives it ever touched.',
+    avatar: '/placeholders/avatar-4.svg',
+  },
+  {
+    author: 'Emmanuel Ketaman Evortepe',
+    role: 'Executive President, Duamenefa Foundation',
+    quote:
+      'You have left a track record which would require someone who is a gifted radio presenter by birth to fill.',
+    avatar: '/placeholders/avatar-5.svg',
+  },
+  {
+    author: 'Amazing Love Schools — Class of 1994',
+    role: 'Classmates and comrades',
+    quote:
+      'We grew to find we have a love — an Amazing Love, very strong and will never fade away. Every time we see a star, we\'ll smile and remember.',
+    avatar: '/placeholders/avatar-6.svg',
+  },
 ]
 
 export const upcomingEvents = [
