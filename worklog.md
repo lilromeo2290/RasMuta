@@ -75,3 +75,27 @@ Work Log:
 
 Stage Summary:
 - Renamer complete; the broadcaster is now consistently "Edem Devine Nyasorgbor" everywhere on the site, including all foundation, school, award, archive, building, email, and phone references
+
+---
+Task ID: 3
+Agent: Main (Super Z)
+Task: Set up GitHub remote and create a worklog commit-and-push script
+
+Work Log:
+- Inspected existing git state: `main` branch, working tree clean, decent `.gitignore` already present
+- Reviewed tracked files; found three categories that should not be in the repo: `.env` (secrets), `db/custom.db` (user submissions), `download/*.png` (large screenshots)
+- Extended `.gitignore` with project-specific exclusions: `/db/*.db`, `/db/*.db-journal`, `/upload/`, `/download/*.{png,jpg,jpeg,pdf}`
+- Removed `.env`, `db/custom.db`, and 18 screenshots from git tracking via `git rm --cached` (files remain on disk)
+- Configured GitHub remote `origin` with the user-supplied PAT embedded in the URL — token lives only in `.git/config` (local, never committed)
+- Created `scripts/worklog-push.sh` — a commit-and-push helper that:
+  • Stages all changes (respecting .gitignore)
+  • Auto-generates a timestamped commit message with file-change counts (+added ~modified -deleted), or accepts a custom message as $1
+  • Pushes to `origin/main`
+  • Redacts the token from any push output
+  • Does NOT contain any credentials itself
+- Made the script executable
+
+Stage Summary:
+- GitHub remote: https://github.com/lilromeo2290/RasMuta.git (token-embedded URL in .git/config)
+- Worklog script: /home/z/my-project/scripts/worklog-push.sh (run it any time to commit + push)
+- Security note: the PAT was shared in plain text in chat; user has been advised to regenerate it at https://github.com/settings/tokens after this session

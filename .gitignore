@@ -52,3 +52,17 @@ prompt
 server.log
 # Skills directory
 /skills/
+
+# RAS MUTA Foundation project-specific
+# Local SQLite database (contains user submissions — do not commit)
+/db/*.db
+/db/*.db-journal
+# User-uploaded files (temporary, processed into /public)
+/upload/
+# Generated screenshots / download artefacts (large, not source)
+/download/*.png
+/download/*.jpg
+/download/*.jpeg
+/download/*.pdf
+# Generated placeholder scripts output is committed (SVGs are source), but the generator script's caches are not
+# Worklog personal notes (if any) — keep the shared worklog.md tracked though
