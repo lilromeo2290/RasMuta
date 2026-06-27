@@ -1,11 +1,11 @@
 'use client'
 
 import * as React from 'react'
-import Link from 'next/link'
-import { Menu, X, Heart } from 'lucide-react'
+import { Menu, X, Heart, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAppStore } from '@/lib/store'
 import { navigation } from '@/lib/data'
+import { tributes } from '@/lib/tributes'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/shared/theme-toggle'
 import {
@@ -16,10 +16,15 @@ import {
   SheetClose,
 } from '@/components/ui/sheet'
 
+const SUBMENU_KEY = 'about-foundation'
+
 export function Header() {
-  const { view, setView } = useAppStore()
+  const { view, setView, activeTributeId, setActiveTributeId } = useAppStore()
   const [scrolled, setScrolled] = React.useState(false)
   const [mobileOpen, setMobileOpen] = React.useState(false)
+  const [mobileTributesOpen, setMobileTributesOpen] = React.useState(false)
+  const [desktopTributesOpen, setDesktopTributesOpen] = React.useState(false)
+  const desktopSubTimeout = React.useRef<ReturnType<typeof setTimeout> | null>(null)
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
@@ -27,6 +32,21 @@ export function Header() {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  const openTribute = (id: string) => {
+    setView(SUBMENU_KEY)
+    // Defer to the next tick so the reader is mounted before we scroll to it.
+    setTimeout(() => setActiveTributeId(id), 60)
+  }
+
+  const openDesktopSub = () => {
+    if (desktopSubTimeout.current) clearTimeout(desktopSubTimeout.current)
+    setDesktopTributesOpen(true)
+  }
+  const closeDesktopSub = () => {
+    if (desktopSubTimeout.current) clearTimeout(desktopSubTimeout.current)
+    desktopSubTimeout.current = setTimeout(() => setDesktopTributesOpen(false), 120)
+  }
 
   return (
     <header
@@ -58,27 +78,92 @@ export function Header() {
 
         {/* Desktop navigation */}
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
-          {navigation.map((item) => (
-            <button
-              key={item.key}
-              onClick={() => setView(item.key)}
-              className={`relative px-3 py-2 text-sm font-medium transition-colors rounded-md ${
-                view === item.key
-                  ? 'text-navy dark:text-gold'
-                  : 'text-muted-foreground hover:text-navy dark:hover:text-gold'
-              }`}
-              aria-current={view === item.key ? 'page' : undefined}
-            >
-              {item.label}
-              {view === item.key && (
-                <motion.span
-                  layoutId="nav-underline"
-                  className="absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-gold"
-                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                />
-              )}
-            </button>
-          ))}
+          {navigation.map((item) => {
+            const hasSubmenu = item.key === SUBMENU_KEY
+            const isActive =
+              view === item.key ||
+              (hasSubmenu && view === 'about-foundation')
+            return (
+              <div
+                key={item.key}
+                className="relative"
+                onMouseEnter={hasSubmenu ? openDesktopSub : undefined}
+                onMouseLeave={hasSubmenu ? closeDesktopSub : undefined}
+              >
+                <button
+                  onClick={() => setView(item.key)}
+                  className={`relative px-3 py-2 text-sm font-medium transition-colors rounded-md inline-flex items-center gap-1 ${
+                    isActive
+                      ? 'text-navy dark:text-gold'
+                      : 'text-muted-foreground hover:text-navy dark:hover:text-gold'
+                  }`}
+                  aria-current={isActive ? 'page' : undefined}
+                  aria-haspopup={hasSubmenu ? 'true' : undefined}
+                  aria-expanded={hasSubmenu ? desktopTributesOpen : undefined}
+                >
+                  {item.label}
+                  {hasSubmenu && (
+                    <ChevronDown
+                      className={`h-3.5 w-3.5 transition-transform ${desktopTributesOpen ? 'rotate-180' : ''}`}
+                    />
+                  )}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-underline"
+                      className="absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-gold"
+                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </button>
+
+                {/* Desktop submenu dropdown */}
+                {hasSubmenu && (
+                  <AnimatePresence>
+                    {desktopTributesOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 8 }}
+                        transition={{ duration: 0.18 }}
+                        className="absolute left-1/2 top-full z-50 mt-1 w-72 -translate-x-1/2 rounded-xl border border-border bg-popover p-2 shadow-xl"
+                        role="menu"
+                      >
+                        <button
+                          onClick={() => { setView(item.key); setActiveTributeId(null); setDesktopTributesOpen(false) }}
+                          className={`block w-full rounded-md px-3 py-2.5 text-left text-sm transition-colors ${
+                            view === item.key && !activeTributeId
+                              ? 'bg-navy text-gold'
+                              : 'text-foreground hover:bg-accent/30'
+                          }`}
+                          role="menuitem"
+                        >
+                          Overview
+                        </button>
+                        <div className="my-1 h-px bg-border" />
+                        <div className="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                          Tributes
+                        </div>
+                        {tributes.map((t) => (
+                          <button
+                            key={t.id}
+                            onClick={() => { openTribute(t.id); setDesktopTributesOpen(false) }}
+                            className={`block w-full rounded-md px-3 py-2.5 text-left text-sm transition-colors ${
+                              view === item.key && activeTributeId === t.id
+                                ? 'bg-navy text-gold'
+                                : 'text-foreground hover:bg-accent/30'
+                            }`}
+                            role="menuitem"
+                          >
+                            {t.navLabel}
+                          </button>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                )}
+              </div>
+            )
+          })}
         </nav>
 
         {/* Right actions */}
@@ -104,25 +189,83 @@ export function Header() {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[360px] bg-background">
+            <SheetContent side="right" className="w-[320px] sm:w-[360px] bg-background overflow-y-auto">
               <SheetTitle className="px-2 pb-2 pt-1 font-serif text-lg text-navy dark:text-gold">
                 Navigation
               </SheetTitle>
               <nav className="flex flex-col gap-1 px-2" aria-label="Mobile">
-                {navigation.map((item) => (
-                  <SheetClose asChild key={item.key}>
-                    <button
-                      onClick={() => setView(item.key)}
-                      className={`rounded-md px-3 py-3 text-left text-base font-medium transition-colors ${
-                        view === item.key
-                          ? 'bg-navy text-gold'
-                          : 'hover:bg-accent/20 text-foreground'
-                      }`}
-                    >
-                      {item.label}
-                    </button>
-                  </SheetClose>
-                ))}
+                {navigation.map((item) => {
+                  const hasSubmenu = item.key === SUBMENU_KEY
+                  if (hasSubmenu) {
+                    const isActive = view === item.key
+                    return (
+                      <div key={item.key}>
+                        <button
+                          onClick={() => {
+                            setMobileTributesOpen((o) => !o)
+                          }}
+                          className={`flex w-full items-center justify-between rounded-md px-3 py-3 text-left text-base font-medium transition-colors ${
+                            isActive
+                              ? 'bg-navy text-gold'
+                              : 'hover:bg-accent/20 text-foreground'
+                          }`}
+                          aria-expanded={mobileTributesOpen}
+                        >
+                          {item.label}
+                          <ChevronDown
+                            className={`h-4 w-4 transition-transform ${mobileTributesOpen ? 'rotate-180' : ''}`}
+                          />
+                        </button>
+                        <AnimatePresence initial={false}>
+                          {mobileTributesOpen && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: 'auto', opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.2 }}
+                              className="overflow-hidden"
+                            >
+                              <div className="ml-3 mt-1 flex flex-col gap-0.5 border-l border-border pl-2">
+                                <SheetClose asChild>
+                                  <button
+                                    onClick={() => { setView(item.key); setActiveTributeId(null) }}
+                                    className="rounded-md px-3 py-2.5 text-left text-sm text-foreground transition-colors hover:bg-accent/30"
+                                  >
+                                    Overview
+                                  </button>
+                                </SheetClose>
+                                {tributes.map((t) => (
+                                  <SheetClose asChild key={t.id}>
+                                    <button
+                                      onClick={() => openTribute(t.id)}
+                                      className="rounded-md px-3 py-2.5 text-left text-sm text-foreground transition-colors hover:bg-accent/30"
+                                    >
+                                      {t.navLabel}
+                                    </button>
+                                  </SheetClose>
+                                ))}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    )
+                  }
+                  return (
+                    <SheetClose asChild key={item.key}>
+                      <button
+                        onClick={() => setView(item.key)}
+                        className={`rounded-md px-3 py-3 text-left text-base font-medium transition-colors ${
+                          view === item.key
+                            ? 'bg-navy text-gold'
+                            : 'hover:bg-accent/20 text-foreground'
+                        }`}
+                      >
+                        {item.label}
+                      </button>
+                    </SheetClose>
+                  )
+                })}
                 <SheetClose asChild>
                   <Button
                     onClick={() => setView('admin')}

@@ -1,12 +1,15 @@
 'use client'
 
 import * as React from 'react'
-import { motion } from 'framer-motion'
-import { Target, Eye, Heart, Shield, Handshake } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Target, Eye, Heart, Shield, Handshake, Quote, Users, Radio, Music, Building2, BookOpen, MapPin } from 'lucide-react'
 import { foundation, trustees, patron } from '@/lib/data'
+import { tributes } from '@/lib/tributes'
+import { useAppStore } from '@/lib/store'
 import { PageHero } from '@/components/shared/page-hero'
 import { SectionHeading } from '@/components/shared/section-heading'
 import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 
 const valueIcons = [Shield, Heart, Handshake, Target, Eye, Shield]
 
@@ -43,7 +46,20 @@ const objectives = [
   },
 ]
 
+const tributeIcons: Record<string, typeof Quote> = {
+  wife: Heart,
+  children: Users,
+  siblings: Users,
+  globalfest: Building2,
+  'jubilee-radio': Radio,
+  ketaman: MapPin,
+  'amazing-love': BookOpen,
+}
+
 export function AboutFoundationView() {
+  const { activeTributeId, setActiveTributeId } = useAppStore()
+  const activeTribute = tributes.find((t) => t.id === activeTributeId) ?? null
+
   return (
     <>
       <PageHero
@@ -274,6 +290,151 @@ export function AboutFoundationView() {
               </CardContent>
             </Card>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Tributes */}
+      <section className="memorial-pattern py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="In Their Own Words"
+            title="Tributes"
+            description="From his wife and children, his siblings, the stations that knew his craft, and the communities that shaped him — a celebration of a life well lived."
+          />
+
+          {/* Tribute cards */}
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {tributes.map((t, idx) => {
+              const Icon = tributeIcons[t.id] ?? Quote
+              const isActive = activeTribute?.id === t.id
+              return (
+                <motion.button
+                  key={t.id}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-60px' }}
+                  transition={{ duration: 0.45, delay: idx * 0.05 }}
+                  onClick={() => setActiveTributeId(t.id)}
+                  className={`text-left rounded-2xl border bg-card p-6 transition-all lift-on-hover ${
+                    isActive ? 'border-gold ring-2 ring-gold/30' : 'border-border'
+                  }`}
+                  aria-pressed={isActive}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-navy-gradient ring-1 ring-gold/40">
+                      <Icon className="h-5 w-5 text-gold" />
+                    </div>
+                    <div className="text-xs font-semibold uppercase tracking-wider text-gold-dark dark:text-gold">
+                      Tribute {String(idx + 1).padStart(2, '0')}
+                    </div>
+                  </div>
+                  <h3 className="mt-4 font-serif text-lg text-navy dark:text-gold">
+                    {t.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{t.byline}</p>
+                  {t.relationship && (
+                    <p className="mt-0.5 text-xs text-muted-foreground/80">{t.relationship}</p>
+                  )}
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground line-clamp-3">
+                    {t.body[0]}
+                  </p>
+                  <span className="mt-4 inline-block text-xs font-semibold uppercase tracking-wider text-navy dark:text-gold">
+                    {isActive ? 'Reading…' : 'Read tribute →'}
+                  </span>
+                </motion.button>
+              )
+            })}
+          </div>
+
+          {/* Tribute reader */}
+          <div id="tribute-reader" className="mt-16 scroll-mt-28">
+            <AnimatePresence mode="wait">
+              {activeTribute ? (
+                <motion.article
+                  key={activeTribute.id}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -16 }}
+                  transition={{ duration: 0.4 }}
+                  className="overflow-hidden rounded-2xl bg-card ring-1 ring-border shadow-xl"
+                >
+                  {/* Header band */}
+                  <div className="bg-navy-gradient px-6 py-10 text-cream sm:px-10 sm:py-12">
+                    <Quote className="h-10 w-10 text-gold/50" aria-hidden="true" />
+                    <h3 className="mt-3 font-serif text-2xl font-bold text-gold sm:text-3xl">
+                      {activeTribute.title}
+                    </h3>
+                    <div className="mt-3 text-sm font-medium text-cream">
+                      {activeTribute.byline}
+                    </div>
+                    {activeTribute.relationship && (
+                      <div className="mt-1 text-xs uppercase tracking-[0.18em] text-cream/70">
+                        {activeTribute.relationship}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Body */}
+                  <div className="px-6 py-10 sm:px-10 sm:py-12">
+                    <div className="space-y-5">
+                      {activeTribute.body.map((para, idx) => (
+                        <p
+                          key={idx}
+                          className={`text-base leading-relaxed text-muted-foreground ${
+                            idx === 0
+                              ? 'first-letter:font-serif first-letter:text-5xl first-letter:font-bold first-letter:text-navy dark:first-letter:text-gold first-letter:mr-2 first-letter:float-left'
+                              : ''
+                          }`}
+                        >
+                          {para}
+                        </p>
+                      ))}
+                    </div>
+
+                    {/* Footer navigation between tributes */}
+                    <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6">
+                      <Button
+                        variant="ghost"
+                        onClick={() => setActiveTributeId(null)}
+                        className="text-navy dark:text-gold"
+                      >
+                        ← Back to all tributes
+                      </Button>
+                      <div className="flex gap-2">
+                        {tributes.map((t, idx) => (
+                          <button
+                            key={t.id}
+                            onClick={() => setActiveTributeId(t.id)}
+                            aria-label={`Go to tribute ${idx + 1}: ${t.navLabel}`}
+                            className={`h-2.5 rounded-full transition-all ${
+                              t.id === activeTribute.id ? 'w-8 bg-gold' : 'w-2.5 bg-muted-foreground/40 hover:bg-muted-foreground'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.article>
+              ) : (
+                <motion.div
+                  key="empty"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="rounded-2xl border border-dashed border-border bg-card/50 px-6 py-12 text-center"
+                >
+                  <Quote className="mx-auto h-10 w-10 text-gold/40" aria-hidden="true" />
+                  <h3 className="mt-4 font-serif text-xl text-navy dark:text-gold">
+                    Select a tribute to read
+                  </h3>
+                  <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
+                    Choose any of the tribute cards above to read the full text. Each tribute is
+                    offered in love by those who knew Edem Divine Nyasorgbor best.
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
       </section>
     </>
