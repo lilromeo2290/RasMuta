@@ -391,6 +391,18 @@ export const testimonials = [
 
 export const upcomingEvents = [
   {
+    id: 'sod-cutting-2026',
+    title: 'Sod-Cutting Ceremony: Modern Toilet Facility at Denu Chicago Basic School',
+    category: 'community',
+    date: '2026-06-29',
+    time: '08:30',
+    location: 'Denu Chicago Basic School, Denu, Ketu South',
+    description:
+      'On 29th June 2026, the Ras Muta Foundation and Nugoryiyi Foundation will officially cut sod for the construction of a four-unit modern toilet facility at Denu Chicago Basic School. This important project aims to improve sanitation, hygiene, and the overall learning environment for pupils and staff. The facility will help address challenges associated with inadequate toilet infrastructure, promote good health practices, and provide a safer and more dignified environment for the school community. The initiative demonstrates the commitment of both foundations to supporting education and community development in Denu. The sod-cutting ceremony marks the beginning of a project that is expected to have a lasting positive impact on the school and its students. The general public is warmly invited.',
+    image: '/sod.jpg',
+    featured: true,
+  },
+  {
     id: 'memorial-lecture-2026',
     title: 'The 2026 Edem D. Nyasorgbor Memorial Lecture',
     category: 'memorial_lecture',
@@ -400,7 +412,7 @@ export const upcomingEvents = [
     description:
       'The third annual Memorial Lecture, delivered this year by Mrs. Graça Machel on the theme "The Airwaves and the Public Trust." The Lecture is followed by the presentation of the 2026 Nyasorgbor Media Excellence Awards.',
     image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1600&auto=format&fit=crop',
-    featured: true,
+    featured: false,
   },
   {
     id: 'fundraising-gala-2026',

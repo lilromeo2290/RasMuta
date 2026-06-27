@@ -65,7 +65,7 @@ export function EventsView() {
       {/* Featured event */}
       <section className="memorial-pattern py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Headline" title="The 2026 Memorial Lecture" />
+          <SectionHeading eyebrow="Headline" title="Featured upcoming event" />
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
