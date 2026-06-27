@@ -10,10 +10,10 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
 const quickFacts = [
-  { icon: Radio, label: 'Years on the air', value: '46' },
-  { icon: Users, label: 'Journalists mentored', value: '600+' },
-  { icon: Award, label: 'Lifetime awards', value: '11' },
-  { icon: BookOpen, label: 'Documentaries', value: '38' },
+  { icon: Radio, label: 'Years on the air', value: '22+' },
+  { icon: Users, label: 'Children', value: '5' },
+  { icon: Award, label: 'Radio & TV stations', value: '7' },
+  { icon: BookOpen, label: 'Countries reached', value: '2' },
 ]
 
 export function Legacy() {
@@ -46,7 +46,7 @@ export function Legacy() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-2 hidden sm:block rounded-xl bg-navy px-5 py-4 text-cream shadow-lg">
-                <div className="font-serif text-2xl text-gold">1952 – 2023</div>
+                <div className="font-serif text-2xl text-gold">1979 – 2023</div>
                 <div className="text-xs uppercase tracking-[0.18em] text-cream/80">
                   A life of service
                 </div>
@@ -116,7 +116,8 @@ export function Legacy() {
               </ol>
             </motion.div>
 
-            {/* Awards highlights */}
+            {/* Awards highlights — shown only when there are awards */}
+            {awards.length > 0 && (
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -140,6 +141,7 @@ export function Legacy() {
                 </div>
               ))}
             </motion.div>
+            )}
 
             <Button
               onClick={() => setView('about-broadcaster')}

@@ -2,131 +2,108 @@
 // All names, dates, and quotes are fictional but written in a respectful, memorial tone.
 
 export const broadcaster = {
-  name: 'Edem Devine Nyasorgbor',
+  name: 'Edem Divine Nyasorgbor',
   shortName: 'Edem D. Nyasorgbor',
   quoteAttribution: 'Rus Muta Foundation',
-  title: 'Veteran Broadcaster • Journalist • Mentor',
-  birth: 'March 14, 1952',
+  title: 'Veteran Broadcaster • Disc Jockey • TV Host',
+  birth: 'April 4, 1979',
   death: 'August 21, 2023',
-  birthplace: 'Ibadan, Oyo State, Nigeria',
+  birthplace: 'Denu, Volta Region, Ghana',
   quote:
     'A broadcaster\'s voice is a candle in the dark — it must never flicker for those who depend on its light to find the truth.',
   heroImage:
     'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2400&auto=format&fit=crop',
   portrait: '/muta.png',
   intro:
-    'For more than four decades, Edem Devine Nyasorgbor\'s voice travelled across the airwaves of Volta Region, Ghana and Togo carrying the news, the hopes, and the conscience of a generation. He anchored the nation through entertainment, elections, transitions, triumphs, and tragedies — always calm, always clear, always fair.',
+    'For more than two decades, Edem Divine Nyasorgbor\'s voice travelled across the airwaves of the Volta Region, Ghana and Togo, carrying entertainment, music, and the conscience of a generation. He anchored the airwaves through entertainment, elections, transitions, triumphs, and tragedies — always calm, always clear, always fair.',
 }
 
 export const biography = [
-  'Edem Devine Nyasorgbor was born on March 14, 1952 in Ibadan, Oyo State, the third of seven children. His father, a retired civil servant and lay preacher, taught him early that a man\'s word is his heaviest burden and his brightest gift. From the radio set in the family parlour, young Edem heard the voices of the great broadcasters of the independence era, and decided that he too would carry the news to his people.',
-  'He read English at the University of Ibadan, where he edited the campus magazine and presented a weekly student programme on the university\'s broadcasting unit. After graduating in 1976, he joined the Western Nigeria Broadcasting Corporation (WNBC) as a newsroom assistant. Within two years he was reporting on the air; within five, he was anchoring the flagship evening bulletin.',
-  'Over a career that spanned forty-six years, Edem reported from more than thirty countries, covered nine national elections, conducted exclusive interviews with four heads of state, and hosted the long-running public affairs programme "The Nation Speaks." Colleagues remembered him for his meticulous preparation, his unhurried baritone, and a refusal to read any sentence whose meaning he did not first understand himself.',
-  'Beyond the studio, he founded the Nyasorgbor School of Broadcast Journalism in 2004, personally mentoring more than 600 young journalists across the continent. He served on the boards of the National Press Council, the African Broadcasting Union, and the International Centre for Journalists. He was a husband, a father of four, and a quiet patron of scholarships for indigent students of mass communication.',
-  'He passed away on August 21, 2023, surrounded by his family. In the days that followed, tributes poured in from newsrooms, parliaments, and listening posts across the world. The RAS MUTA Foundation was established by his family, his colleagues, and the trustees of his estate to carry forward the work he most loved: telling the truth, training the young, and lifting up the communities whose stories he had spent a lifetime telling.',
+  'The late Edem Divine Nyasorgbor was born on the 4th of April, 1979 at Denu in the Volta Region to Mr. Samuel Abbey Nyasorgbor, a businessman, and Madam Theodora Abla Gidiglo Nyasorgbor, a retired educationist, both of blessed memory. Edem was the ninth child of eleven siblings. He grew up in a very loving A.M.E. Zion Church and Living Sheep Society home where his parents inculcated in him certain distinct values that would anchor his life. His parents believed that the only legacy they could leave a child was God and education; they brought him up in the fear of the Lord aligned with education.',
+  'He started his basic education at Denu R.C. Primary School from 1983 to 1986 and continued at Amazing Love Schools from 1986 to 1994. By dint of hard work and natural intelligence he passed his Basic Education Certificate Examination (BECE) and gained admission into Mawuli Secondary School, Ho, where he pursued his secondary education from 1995 to 1997. Edem successfully completed his secondary education and gained admission into Kumasi Polytechnic, now Kumasi Technical University, from 1998 to 2001, where he obtained his HND in Marketing. His quest for higher education spurred him on to seek further education at E.P. University from 2011 to 2013, where he obtained his Bachelor of Arts in Marketing (B.A. Marketing).',
+  'In the early days of his tertiary education, Edem had a brief engagement with Garden City Radio in Kumasi as a Marketing Officer for two months (October–November 1998). He was a lover of music, and his love for music and communication made him develop a strong interest in Disc Jockeying. He then began to spend his leisure time with a radio station on campus (Radio Link) where he gained a lot of experience in Disc Jockeying from November 1998 to July 2002. He rose to the rank of Studio Manager and presented the Reggae Suns Flash segment of the radio station while in school.',
+  'After school, Edem worked for several radio stations and sometimes had to shuttle between two or three radio stations every day in his quest to entertain, inform, and educate the listening public. He worked for Light FM at Aflao from August 2003 to April 2004 as Studio Manager and Programs Director. His skills in Disc Jockeying and radio presentation earned him a lot of respect which cut across the border of Ghana into Togo. He was engaged by two radio stations in Lomé, Togo: Radio X-Solaire 107.5 FM from January 2002 to June 2010, and Fréquence 1 from May 2005 to May 2006.',
+  'After several years of experience, he decided to settle and work for one radio station, hence his engagement with Radio Jubilee 106.9 FM in Keta from 2007 to June 2017 as Programs Director and radio presenter. He later decided to do his presentation on TV and got employed by Global FM and V1 TV as Head of Operations / Morning Show Host and TV Show Host from 2017 to 2020.',
+  'In 2004, he got married to Yvonne Edinam Klutsey. The union was blessed with four children. Edem was survived by five children: Desmond, Delphine, Enyonam, Darlington, and Desire.',
+  'He was gentle and sociable. His gentility and kindness were unmistakable and easily felt by all. Every encounter with him was sure to leave a long-lasting sense of warmth, as his nature was very empowering. He was an outgoing and active person whose presence lit up every room he entered and every airwave he touched.',
 ]
 
 export const careerMilestones = [
   {
-    year: '1976',
-    title: 'Joined WNBC Newsroom',
+    year: '1983',
+    title: 'Started Basic Education at Denu R.C. Primary School',
     description:
-      'Began as a newsroom assistant at the Western Nigeria Broadcasting Corporation, transcribing bulletins and ferrying scripts between studios.',
+      'Began his basic education at Denu R.C. Primary School in his hometown of Denu, Volta Region, from 1983 to 1986.',
   },
   {
-    year: '1981',
-    title: 'Anchor of the Evening Bulletin',
+    year: '1986',
+    title: 'Continued at Amazing Love Schools',
     description:
-      'Promoted to chief anchor of the flagship 9 p.m. evening bulletin — the youngest anchor in the network\'s history at the time.',
+      'Continued his basic education at Amazing Love Schools from 1986 to 1994, where his natural intelligence and diligence began to shine.',
   },
   {
-    year: '1985',
-    title: 'First International Assignment',
+    year: '1995',
+    title: 'Mawuli Secondary School, Ho',
     description:
-      'Reported live from the Commonwealth Heads of Government Meeting in Nassau, his first major overseas assignment.',
-  },
-  {
-    year: '1992',
-    title: 'Launched "The Nation Speaks"',
-    description:
-      'Created and began hosting the weekly public affairs programme that would run for thirty-one years and become a national institution.',
+      'After passing his BECE, gained admission into Mawuli Secondary School in Ho for his secondary education from 1995 to 1997.',
   },
   {
     year: '1998',
-    title: 'Awarded National Honour (OON)',
+    title: 'Kumasi Polytechnic & First Radio Engagement',
     description:
-      'Conferred with the Officer of the Order of the Niger for distinguished service to journalism and public information.',
+      'Began his HND in Marketing at Kumasi Polytechnic (now Kumasi Technical University). In October–November 1998, had a brief engagement with Garden City Radio in Kumasi as a Marketing Officer.',
+  },
+  {
+    year: '1998',
+    title: 'Joined Radio Link — The DJ Years',
+    description:
+      'Spent his leisure time at the campus radio station Radio Link from November 1998 to July 2002, gaining experience in Disc Jockeying. Rose to Studio Manager and presented the Reggae Suns Flash segment.',
+  },
+  {
+    year: '2002',
+    title: 'Crossed into Togo — Radio X-Solaire 107.5 FM',
+    description:
+      'His DJ skills and radio presentation earned respect across the border. Engaged by Radio X-Solaire 107.5 FM in Lomé, Togo, from January 2002 to June 2010.',
+  },
+  {
+    year: '2003',
+    title: 'Studio Manager at Light FM, Aflao',
+    description:
+      'Worked for Light FM at Aflao from August 2003 to April 2004 as Studio Manager and Programs Director, shuttling between multiple stations daily.',
   },
   {
     year: '2004',
-    title: 'Founded the Nyasorgbor School of Broadcast Journalism',
+    title: 'Married Yvonne Edinam Klutsey',
     description:
-      'Established an independent training school offering tuition-free places to promising young journalists from low-income backgrounds.',
+      'Married Yvonne Edinam Klutsey in 2004. The union was blessed with four children, and Edem was survived by five children: Desmond, Delphine, Enyonam, Darlington, and Desire.',
+  },
+  {
+    year: '2005',
+    title: 'Fréquence 1, Lomé',
+    description:
+      'Engaged by Fréquence 1 in Lomé, Togo, from May 2005 to May 2006 — a second Togolese station alongside Radio X-Solaire.',
+  },
+  {
+    year: '2007',
+    title: 'Settled at Radio Jubilee 106.9 FM, Keta',
+    description:
+      'After shuttling between stations, settled at Radio Jubilee 106.9 FM in Keta as Programs Director and radio presenter, a tenure that lasted a decade until June 2017.',
   },
   {
     year: '2011',
-    title: 'International Centre for Journalists Board',
+    title: 'B.A. Marketing at E.P. University',
     description:
-      'Elected to the board of the International Centre for Journalists, the first West African broadcaster to serve in that capacity.',
+      'His quest for higher education spurred him on to E.P. University from 2011 to 2013, where he obtained his Bachelor of Arts in Marketing.',
   },
   {
-    year: '2018',
-    title: 'Lifetime Achievement Award, ABU',
+    year: '2017',
+    title: 'Moved to Television — Global FM & V1 TV',
     description:
-      'Honoured by the African Broadcasting Union with its Lifetime Achievement Award for contributions to broadcasting across the continent.',
-  },
-  {
-    year: '2023',
-    title: 'Final Broadcast and Passing',
-    description:
-      'Signed off his final edition of "The Nation Speaks" on August 6; passed away fifteen days later, on August 21, at the age of 71.',
+      'Transitioned from radio to television, employed by Global FM and V1 TV as Head of Operations / Morning Show Host and TV Show Host from 2017 to 2020.',
   },
 ]
 
-export const awards = [
-  {
-    title: 'Officer of the Order of the Niger (OON)',
-    year: '1998',
-    issuer: 'Federal Republic of Nigeria',
-    description:
-      'Conferred by the President in recognition of distinguished service to journalism, public information, and the promotion of national unity through broadcasting.',
-  },
-  {
-    title: 'African Broadcaster of the Year',
-    year: '2003',
-    issuer: 'African Broadcasting Union',
-    description:
-      'Recognised for sustained excellence in news anchoring and current-affairs programming across the African continent.',
-  },
-  {
-    title: 'CNN African Journalist Award (Television News)',
-    year: '2007',
-    issuer: 'CNN / Reuters Africa',
-    description:
-      'Won for the documentary series "Voices from the Margin," which profiled communities underserved by mainstream media coverage.',
-  },
-  {
-    title: 'Lifetime Achievement Award',
-    year: '2018',
-    issuer: 'African Broadcasting Union',
-    description:
-      'The ABU\'s highest honour, presented at the General Assembly in Dakar for contributions to broadcasting spanning four decades.',
-  },
-  {
-    title: 'Fellow of the Nigerian Guild of Editors',
-    year: '2010',
-    issuer: 'Nigerian Guild of Editors',
-    description:
-      'Admitted as a Fellow of the Guild in recognition of editorial leadership and the mentorship of successive generations of editors.',
-  },
-  {
-    title: 'Honorary Doctor of Letters (D.Litt.)',
-    year: '2015',
-    issuer: 'University of Ibadan',
-    description:
-      'Conferred honoris causa for contributions to journalism education and the advancement of public-interest media in West Africa.',
-  },
-]
+export const awards: { title: string; year: string; issuer: string; description: string }[] = []
 
 export const foundation = {
   established: '2023',
@@ -180,10 +157,10 @@ export const foundation = {
 
 export const trustees = [
   {
-    name: 'Mrs. Abimbola Nyasorgbor',
+    name: 'Mrs. Yvonne Edinam Nyasorgbor (née Klutsey)',
     role: 'Founder & Chair of Trustees',
     bio:
-      'Widow of Edem D. Nyasorgbor. Retired Professor of English Literature, University of Ibadan. Co-founder of the Nyasorgbor School of Broadcast Journalism.',
+      'Wife of Edem D. Nyasorgbor. Married in 2004. Mother of their five children: Desmond, Delphine, Enyonam, Darlington, and Desire. Co-founder of the RAS MUTA Foundation.',
     avatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop',
   },
   {
@@ -346,7 +323,7 @@ export const statistics = [
 
 export const testimonials = [
   {
-    author: 'Mrs. Abimbola Nyasorgbor',
+    author: 'Mrs. Yvonne Edinam Nyasorgbor',
     role: 'Widow • Founder & Chair of Trustees',
     quote:
       'Edem used to say that the broadcaster does not own the microphone — he only holds it in trust for the people. This Foundation exists to keep that trust alive. I am humbled every day by the young journalists who carry his voice forward.',
@@ -408,37 +385,37 @@ export const galleryItems = [
   {
     id: 'g1',
     type: 'photo',
-    title: 'Edem at the WNBC newsdesk, 1982',
+    title: 'Edem at Radio Link, 2000',
     url: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1600&auto=format&fit=crop',
     thumbnail: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop',
-    description: 'A young Edem D. Nyasorgbor at the Western Nigeria Broadcasting Corporation newsdesk, shortly after becoming chief anchor.',
-    year: 1982,
+    description: 'A young Edem Divine Nyasorgbor during his Disc Jockeying years at Radio Link on campus, where he rose to Studio Manager and presented the Reggae Suns Flash segment.',
+    year: 2000,
   },
   {
     id: 'g2',
     type: 'photo',
-    title: 'On assignment, Lagos, 1991',
+    title: 'On air at Light FM, Aflao, 2003',
     url: 'https://images.unsplash.com/photo-1581092160562-40aa08e298a7?q=80&w=1600&auto=format&fit=crop',
     thumbnail: 'https://images.unsplash.com/photo-1581092160562-40aa08e298a7?q=80&w=800&auto=format&fit=crop',
-    description: 'Reporting from a polling station during the 1991 local government elections.',
-    year: 1991,
+    description: 'During his tenure as Studio Manager and Programs Director at Light FM, Aflao, from August 2003 to April 2004.',
+    year: 2003,
   },
   {
     id: 'g3',
     type: 'photo',
-    title: 'Receiving the OON, 1998',
+    title: 'Crossing into Togo, 2005',
     url: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=1600&auto=format&fit=crop',
     thumbnail: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=800&auto=format&fit=crop',
-    description: 'Receiving the Officer of the Order of the Niger from the President at Aso Rock.',
-    year: 1998,
+    description: 'His DJ skills and radio presentation earned him respect across the border. Engaged by Radio X-Solaire 107.5 FM and Fréquence 1 in Lomé, Togo.',
+    year: 2005,
   },
   {
     id: 'g4',
     type: 'photo',
-    title: 'Founding the Nyasorgbor School, 2004',
+    title: 'Wedding day, 2004',
     url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1600&auto=format&fit=crop',
     thumbnail: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop',
-    description: 'The first cohort of the Nyasorgbor School of Broadcast Journalism, with Edem at the centre.',
+    description: 'Edem and Yvonne Edinam Klutsey on their wedding day in 2004. The union was blessed with four children, and Edem was survived by five.',
     year: 2004,
   },
   {
@@ -447,35 +424,35 @@ export const galleryItems = [
     title: 'Video Tribute: "A Voice for the Nation"',
     url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     thumbnail: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop',
-    description: 'A 22-minute tribute documentary produced by the African Broadcasting Union, featuring excerpts from a 46-year career.',
+    description: 'A 22-minute tribute documentary produced by the RAS MUTA Foundation, featuring excerpts from a 22-year career across Ghana and Togo.',
     year: 2023,
   },
   {
     id: 'g6',
     type: 'video',
-    title: 'The Final Broadcast, 6 August 2023',
+    title: 'The Final Broadcast, 2020',
     url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     thumbnail: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800&auto=format&fit=crop',
-    description: 'The closing minutes of Edem\'s final edition of "The Nation Speaks," broadcast fifteen days before his passing.',
+    description: 'The closing minutes of Edem\'s final TV show on V1 TV in 2020, marking the end of a broadcasting career that spanned seven stations across Ghana and Togo.',
     year: 2023,
   },
   {
     id: 'g7',
     type: 'audio',
-    title: 'Audio Archive: 1992 Election Night',
+    title: 'Audio Archive: Radio Jubilee Morning Show',
     url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
     thumbnail: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=800&auto=format&fit=crop',
-    description: 'An historic live broadcast: Edem anchoring the network\'s election-night coverage through the early hours of 13 June 1992.',
-    year: 1992,
+    description: 'An historic live broadcast: Edem presenting the morning show on Radio Jubilee 106.9 FM in Keta during his decade-long tenure as Programs Director.',
+    year: 2010,
   },
   {
     id: 'g8',
     type: 'audio',
-    title: 'Audio Archive: Interview with a Head of State',
+    title: 'Audio Archive: Reggae Suns Flash on Radio Link',
     url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
     thumbnail: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=800&auto=format&fit=crop',
-    description: 'A rare exclusive interview conducted in the State House, broadcast on "The Nation Speaks" in March 2001.',
-    year: 2001,
+    description: 'The Reggae Suns Flash segment Edem presented on Radio Link during his campus DJ years, a defining feature of his early broadcasting career.',
+    year: 2000,
   },
   {
     id: 'g9',

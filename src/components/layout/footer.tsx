@@ -203,7 +203,7 @@ export function Footer() {
             All rights reserved.
           </p>
           <p className="text-center sm:text-right">
-            In loving memory of Edem Devine Nyasorgbor (1952&ndash;2023).
+            In loving memory of Edem Divine Nyasorgbor (1979&ndash;2023).
           </p>
         </div>
       </div>

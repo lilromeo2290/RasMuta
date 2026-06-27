@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { motion } from 'framer-motion'
-import { Radio, BookOpen, Award, Users, Globe2 } from 'lucide-react'
+import { Radio, BookOpen, Award, Users, Globe2, Music, Heart } from 'lucide-react'
 import {
   broadcaster,
   biography,
@@ -18,25 +18,25 @@ const contributions = [
     icon: Radio,
     title: 'To Broadcasting',
     body:
-      'Edem redefined what it meant to anchor the news in West Africa. His unhurried baritone, his insistence on understanding every sentence before he read it, and his refusal to bend a fact for convenience became the standard against which a generation of broadcasters measured themselves. He anchored more than 9,000 evening bulletins over a 46-year career.',
+      'Edem\'s voice travelled across the airwaves of the Volta Region, Ghana and Togo for more than two decades. He worked for seven radio and television stations — Garden City Radio, Radio Link, Light FM, Radio X-Solaire 107.5 FM, Fréquence 1, Radio Jubilee 106.9 FM, and Global FM / V1 TV — serving at various times as Studio Manager, Programs Director, radio presenter, morning show host, and TV show host.',
+  },
+  {
+    icon: Music,
+    title: 'To Music & Culture',
+    body:
+      'A lover of music from his youth, he developed a strong interest in Disc Jockeying during his tertiary years and rose to Studio Manager at Radio Link, where he presented the Reggae Suns Flash segment. His DJ skills and radio presentation earned him respect that cut across the border of Ghana into Togo, engaging two Lomé-based stations simultaneously.',
+  },
+  {
+    icon: Heart,
+    title: 'To Family & Community',
+    body:
+      'He was gentle and sociable, and his gentility and kindness were unmistakable and easily felt by all. Every encounter with him left a long-lasting sense of warmth. He was an outgoing and active person whose nature was very empowering, and whose presence lit up every room he entered and every airwave he touched.',
   },
   {
     icon: BookOpen,
-    title: 'To Journalism Education',
+    title: 'To Education',
     body:
-      'Through the Nyasorgbor School of Broadcast Journalism, which he founded in 2004, he personally trained more than 600 journalists from low-income backgrounds on tuition-free places. The School\'s curriculum and its residential mentorship week became the template adopted by three other schools across the continent.',
-  },
-  {
-    icon: Users,
-    title: 'To the Community',
-    body:
-      'He gave quietly and consistently — funding the education of more than 70 indigent students out of his own pocket, endowing a chair in mass communication at his alma mater, and convening an annual forum for community-radio managers that grew, by 2018, into the largest of its kind in West Africa.',
-  },
-  {
-    icon: Globe2,
-    title: 'To the Profession',
-    body:
-      'As a board member of the International Centre for Journalists and the African Broadcasting Union, he championed press-freedom standards, safety training for conflict reporters, and the establishment of a continent-wide emergency protocol for journalists under threat.',
+      'Raised by parents who believed that the only legacy they could leave a child was God and education, Edem lived that conviction. He earned his HND in Marketing from Kumasi Polytechnic and later returned to E.P. University for his Bachelor of Arts in Marketing — a testament to his lifelong quest for higher education and self-improvement alongside his broadcasting career.',
   },
 ]
 
@@ -44,7 +44,7 @@ export function AboutBroadcasterView() {
   return (
     <>
       <PageHero
-        eyebrow="In Memoriam · 1952 – 2023"
+        eyebrow="In Memoriam · 1979 – 2023"
         title={broadcaster.name}
         description={`${broadcaster.title}. Born ${broadcaster.birth} in ${broadcaster.birthplace}. Passed away ${broadcaster.death}.`}
         image={broadcaster.heroImage}
@@ -117,7 +117,7 @@ export function AboutBroadcasterView() {
               const isLeft = idx % 2 === 0
               return (
                 <motion.li
-                  key={m.year}
+                  key={m.year + '-' + m.title}
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-60px' }}
@@ -157,7 +157,8 @@ export function AboutBroadcasterView() {
         </div>
       </section>
 
-      {/* Awards */}
+      {/* Awards — shown only when there are awards to display */}
+      {awards.length > 0 && (
       <section className="memorial-pattern py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
@@ -200,14 +201,15 @@ export function AboutBroadcasterView() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Contributions */}
       <section className="bg-muted/40 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Beyond the Studio"
-            title="Contributions to Journalism, Broadcasting & Society"
-            description="Edem's impact reached far beyond the newsroom — into classrooms, community stations, boardrooms, and the structures that sustain a free press."
+            title="A Life of Warmth, Music, and Service"
+            description="Edem\'s impact reached far beyond the newsroom — into the music culture of two nations, the hearts of his listeners, and the values his parents instilled in him."
           />
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
             {contributions.map((c, idx) => (
