@@ -36,11 +36,11 @@ export function FeaturedPrograms() {
         <SectionHeading
           eyebrow="What We Do"
           title="Featured Programs"
-          description="Six programmes, all carrying forward the work Edem cared most about — and all measured by the lives they touch."
+          description="A selection of our programmes, carrying forward the work Edem cared most about — each measured by the lives it touches."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {programs.map((p, idx) => {
+          {programs.slice(0, 3).map((p, idx) => {
             const Icon = iconMap[p.icon] ?? GraduationCap
             return (
               <motion.div
