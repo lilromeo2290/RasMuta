@@ -143,9 +143,19 @@ export function NewsView() {
       <section className="bg-muted/40 py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {rest.length === 0 ? (
-            <p className="text-center text-muted-foreground py-12">
-              No articles found matching your search.
-            </p>
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/50 px-6 py-20 text-center">
+              <Newspaper className="h-10 w-10 text-gold/50" aria-hidden="true" />
+              <h3 className="mt-4 font-serif text-xl text-navy dark:text-gold">
+                {newsArticles.length === 0
+                  ? 'News will be published here soon'
+                  : 'No articles found matching your search'}
+              </h3>
+              <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
+                {newsArticles.length === 0
+                  ? 'Press releases, news, annual reports, and publications from the RAS MUTA Foundation will appear on this page as they are released. Please check back shortly.'
+                  : 'Try a different search term or category filter.'}
+              </p>
+            </div>
           ) : (
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {rest.map((n, idx) => {

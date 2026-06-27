@@ -383,68 +383,7 @@ export const upcomingEvents = [
 
 export const galleryItems: { id: string; type: string; title: string; url: string; thumbnail: string; description: string; year: number }[] = []
 
-export const newsArticles = [
-  {
-    id: 'n1',
-    title: 'Foundation Awards 142 Scholarships for the 2025 Academic Year',
-    category: 'press_release',
-    excerpt:
-      'The Foundation has confirmed 142 fully funded scholarships for mass-communication students across eleven universities, bringing the total active cohort to 284 scholars.',
-    date: '2025-09-12',
-    author: 'Foundation Secretariat',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop',
-  },
-  {
-    id: 'n2',
-    title: 'Mrs. Graça Machel to Deliver the 2026 Memorial Lecture',
-    category: 'news',
-    excerpt:
-      'The Foundation is honoured to announce that Mrs. Graça Machel will deliver the third annual RAS MUTA Memorial Lecture on 21 August 2026.',
-    date: '2025-11-04',
-    author: 'Editorial Office',
-    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1600&auto=format&fit=crop',
-  },
-  {
-    id: 'n3',
-    title: 'Annual Report 2024: A Year of Carrying the Candle Forward',
-    category: 'annual_report',
-    excerpt:
-      'The Foundation\'s second annual report is now available. Total contributions rose to $1.85 million; 64% of programme spending was disbursed directly to beneficiaries.',
-    date: '2025-03-15',
-    author: 'Board of Trustees',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1600&auto=format&fit=crop',
-  },
-  {
-    id: 'n4',
-    title: 'Mentorship Programme Opens Applications for the 2026 Cohort',
-    category: 'news',
-    excerpt:
-      'Applications are now open for the fourth cohort of the Journalism Mentorship Programme. Sixty places are available to early-career journalists across the continent.',
-    date: '2026-01-10',
-    author: 'Programmes Office',
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop',
-  },
-  {
-    id: 'n5',
-    title: 'Nyasorgbor Media Excellence Awards: Call for Entries',
-    category: 'press_release',
-    excerpt:
-      'Entries are invited for the 2026 Nyasorgbor Awards across seven categories. Submissions close on 30 April 2026. The ceremony will be held on 21 August.',
-    date: '2026-02-01',
-    author: 'Awards Secretariat',
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop',
-  },
-  {
-    id: 'n6',
-    title: 'Restored Archive: "Voices from the Margin" Re-released',
-    category: 'publication',
-    excerpt:
-      'The Foundation has completed a two-year restoration of Edem\'s 2007 documentary series. All six episodes are now available to stream free of charge.',
-    date: '2025-07-18',
-    author: 'Archive & Publications',
-    image: 'https://images.unsplash.com/photo-1516259762381-22954d7d3ecf?q=80&w=1600&auto=format&fit=crop',
-  },
-]
+export const newsArticles: { id: string; title: string; category: string; excerpt: string; date: string; author: string; image: string }[] = []
 
 export const stats = {
   donationGoal: 2500000,
