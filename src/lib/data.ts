@@ -1,4 +1,4 @@
-// Sample content for the Edem D. Nyasorgbor Memorial Foundation website.
+// Sample content for the RAS MUTA Foundation website.
 // All names, dates, and quotes are fictional but written in a respectful, memorial tone.
 
 export const broadcaster = {
@@ -23,7 +23,7 @@ export const biography = [
   'He read English at the University of Ibadan, where he edited the campus magazine and presented a weekly student programme on the university\'s broadcasting unit. After graduating in 1976, he joined the Western Nigeria Broadcasting Corporation (WNBC) as a newsroom assistant. Within two years he was reporting on the air; within five, he was anchoring the flagship evening bulletin.',
   'Over a career that spanned forty-six years, Edem reported from more than thirty countries, covered nine national elections, conducted exclusive interviews with four heads of state, and hosted the long-running public affairs programme "The Nation Speaks." Colleagues remembered him for his meticulous preparation, his unhurried baritone, and a refusal to read any sentence whose meaning he did not first understand himself.',
   'Beyond the studio, he founded the Nyasorgbor School of Broadcast Journalism in 2004, personally mentoring more than 600 young journalists across the continent. He served on the boards of the National Press Council, the African Broadcasting Union, and the International Centre for Journalists. He was a husband, a father of four, and a quiet patron of scholarships for indigent students of mass communication.',
-  'He passed away on August 21, 2023, surrounded by his family. In the days that followed, tributes poured in from newsrooms, parliaments, and listening posts across the world. The Edem D. Nyasorgbor Memorial Foundation was established by his family, his colleagues, and the trustees of his estate to carry forward the work he most loved: telling the truth, training the young, and lifting up the communities whose stories he had spent a lifetime telling.',
+  'He passed away on August 21, 2023, surrounded by his family. In the days that followed, tributes poured in from newsrooms, parliaments, and listening posts across the world. The RAS MUTA Foundation was established by his family, his colleagues, and the trustees of his estate to carry forward the work he most loved: telling the truth, training the young, and lifting up the communities whose stories he had spent a lifetime telling.',
 ]
 
 export const careerMilestones = [
@@ -130,10 +130,10 @@ export const awards = [
 
 export const foundation = {
   established: '2023',
-  legalName: 'The Edem D. Nyasorgbor Memorial Foundation',
+  legalName: 'The RAS MUTA Foundation',
   tagline: 'Carrying the candle forward.',
   mission:
-    'The Edem D. Nyasorgbor Memorial Foundation exists to honour the life and work of one of West Africa\'s most respected broadcasters by investing in the people and the values he cared most about: accurate and fearless journalism, the education of the next generation, and the dignity of communities too often unheard.',
+    'The RAS MUTA Foundation exists to honour the life and work of one of West Africa\'s most respected broadcasters by investing in the people and the values he cared most about: accurate and fearless journalism, the education of the next generation, and the dignity of communities too often unheard.',
   vision:
     'A continent in which every community is served by journalists who are skilled, ethical, and fearless; in which no promising student is denied an education for lack of means; and in which the voice of the public, in all its diversity, has a steady, trustworthy place on the airwaves.',
   values: [
@@ -504,7 +504,7 @@ export const newsArticles = [
     title: 'Mrs. Graça Machel to Deliver the 2026 Memorial Lecture',
     category: 'news',
     excerpt:
-      'The Foundation is honoured to announce that Mrs. Graça Machel will deliver the third annual Edem D. Nyasorgbor Memorial Lecture on 21 August 2026.',
+      'The Foundation is honoured to announce that Mrs. Graça Machel will deliver the third annual RAS MUTA Memorial Lecture on 21 August 2026.',
     date: '2025-11-04',
     author: 'Editorial Office',
     image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1600&auto=format&fit=crop',

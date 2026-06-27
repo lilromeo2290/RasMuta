@@ -40,7 +40,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    lines: ['info@nyasorgborfoundation.org', 'press@nyasorgborfoundation.org'],
+    lines: ['info@rasmutafoundation.org', 'press@rasmutafoundation.org'],
   },
   {
     icon: Clock,
@@ -335,8 +335,8 @@ export function ContactView() {
                     please contact the Editorial Office directly.
                   </p>
                   <div className="mt-3 text-sm">
-                    <a href="mailto:press@nyasorgborfoundation.org" className="font-medium text-navy dark:text-gold hover:underline">
-                      press@nyasorgborfoundation.org
+                    <a href="mailto:press@rasmutafoundation.org" className="font-medium text-navy dark:text-gold hover:underline">
+                      press@rasmutafoundation.org
                     </a>
                     <div className="text-muted-foreground">+234 805 000 0001</div>
                   </div>

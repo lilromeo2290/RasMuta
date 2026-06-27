@@ -483,7 +483,7 @@ export function DonateView() {
                   <div className="mt-4 space-y-1.5 rounded-lg bg-muted/40 p-4 text-sm font-mono">
                     <div><span className="text-muted-foreground">Bank:</span> First Continental Bank</div>
                     <div><span className="text-muted-foreground">Account:</span> 3041 9822 07</div>
-                    <div><span className="text-muted-foreground">Name:</span> E. D. Nyasorgbor Memorial Foundation</div>
+                    <div><span className="text-muted-foreground">Name:</span> RAS MUTA Foundation</div>
                     <div><span className="text-muted-foreground">SWIFT:</span> FCONNGLA</div>
                   </div>
                 </CardContent>

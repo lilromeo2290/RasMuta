@@ -21,10 +21,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Edem D. Nyasorgbor Memorial Foundation | Honoring a Broadcasting Legend",
+  title: "RAS MUTA Foundation | Honoring a Broadcasting Legend",
   description:
-    "The Edem D. Nyasorgbor Memorial Foundation honors the life and legacy of a renowned broadcaster through scholarships, journalism mentorship, community outreach, and the annual Memorial Lecture.",
+    "The RAS MUTA Foundation honors the life and legacy of a renowned broadcaster through scholarships, journalism mentorship, community outreach, and the annual Memorial Lecture.",
   keywords: [
+    "RAS MUTA Foundation",
     "Edem Nyasorgbor",
     "memorial foundation",
     "broadcasting legend",
@@ -33,17 +34,17 @@ export const metadata: Metadata = {
     "memorial lecture",
     "media excellence",
   ],
-  authors: [{ name: "Edem D. Nyasorgbor Memorial Foundation" }],
+  authors: [{ name: "RAS MUTA Foundation" }],
   openGraph: {
-    title: "Edem D. Nyasorgbor Memorial Foundation",
+    title: "RAS MUTA Foundation",
     description:
       "Honoring the life, work, and enduring legacy of broadcaster Edem D. Nyasorgbor through education, mentorship, and community development.",
-    siteName: "Nyasorgbor Memorial Foundation",
+    siteName: "RAS MUTA Foundation",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Edem D. Nyasorgbor Memorial Foundation",
+    title: "RAS MUTA Foundation",
     description:
       "Honoring a broadcasting legend through scholarships, journalism mentorship, and community development.",
   },

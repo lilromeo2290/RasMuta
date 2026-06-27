@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { Radio, Mail, Phone, MapPin, Facebook, Twitter, Youtube, Instagram, Linkedin, MessageCircle, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, Facebook, Twitter, Youtube, Instagram, Linkedin, MessageCircle, Send } from 'lucide-react'
 import { useAppStore } from '@/lib/store'
 import { navigation } from '@/lib/data'
 import { Button } from '@/components/ui/button'
@@ -87,15 +87,15 @@ export function Footer() {
         {/* Brand */}
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-gold/50">
-              <Radio className="h-5 w-5 text-gold" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-gold/50 overflow-hidden">
+              <img src="/ras-muta-logo.jpg" alt="RAS MUTA Foundation logo" className="h-full w-full object-cover" />
             </div>
             <div>
               <div className="font-serif text-base font-bold text-gold">
-                Edem D. Nyasorgbor
+                RAS MUTA
               </div>
               <div className="text-[11px] uppercase tracking-[0.18em] text-cream/70">
-                Memorial Foundation
+                Foundation
               </div>
             </div>
           </div>
@@ -152,8 +152,8 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 flex-shrink-0 text-gold" />
-              <a href="mailto:info@nyasorgborfoundation.org" className="hover:text-gold">
-                info@nyasorgborfoundation.org
+              <a href="mailto:info@rasmutafoundation.org" className="hover:text-gold">
+                info@rasmutafoundation.org
               </a>
             </li>
           </ul>
@@ -199,7 +199,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-cream/70 sm:flex-row sm:px-6 lg:px-8">
           <p>
-            &copy; {new Date().getFullYear()} The Edem D. Nyasorgbor Memorial Foundation.
+            &copy; {new Date().getFullYear()} The RAS MUTA Foundation.
             All rights reserved.
           </p>
           <p className="text-center sm:text-right">

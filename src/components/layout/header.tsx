@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { Menu, X, Radio, Heart } from 'lucide-react'
+import { Menu, X, Heart } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAppStore } from '@/lib/store'
 import { navigation } from '@/lib/data'
@@ -43,15 +43,15 @@ export function Header() {
           className="flex items-center gap-3 text-left transition-opacity hover:opacity-90"
           aria-label="Go to home"
         >
-          <div className="relative flex h-11 w-11 items-center justify-center rounded-full bg-navy-gradient ring-2 ring-gold/60">
-            <Radio className="h-5 w-5 text-gold" />
+          <div className="relative flex h-11 w-11 items-center justify-center rounded-full bg-navy-gradient ring-2 ring-gold/60 overflow-hidden">
+            <img src="/ras-muta-logo.jpg" alt="RAS MUTA Foundation logo" className="h-full w-full object-cover" />
           </div>
           <div className="hidden sm:block leading-tight">
             <div className="font-serif text-base font-bold text-navy dark:text-gold">
-              E. D. Nyasorgbor
+              RAS MUTA
             </div>
             <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-              Memorial Foundation
+              Foundation
             </div>
           </div>
         </button>
@@ -142,7 +142,7 @@ export function Header() {
                 </SheetClose>
               </nav>
               <div className="mt-auto px-4 py-4 text-xs text-muted-foreground">
-                &copy; {new Date().getFullYear()} Edem D. Nyasorgbor Memorial Foundation
+                &copy; {new Date().getFullYear()} RAS MUTA Foundation
               </div>
             </SheetContent>
           </Sheet>
