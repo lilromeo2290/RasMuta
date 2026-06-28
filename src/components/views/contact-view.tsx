@@ -10,10 +10,6 @@ import {
   Send,
   MessageCircle,
   Facebook,
-  Twitter,
-  Youtube,
-  Instagram,
-  Linkedin,
   CheckCircle2,
 } from 'lucide-react'
 import { PageHero } from '@/components/shared/page-hero'
@@ -51,10 +47,6 @@ const contactInfo = [
 
 const socials = [
   { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
-  { icon: Twitter, label: 'X / Twitter', href: 'https://twitter.com' },
-  { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
-  { icon: Youtube, label: 'YouTube', href: 'https://youtube.com' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
 ]
 
 export function ContactView() {

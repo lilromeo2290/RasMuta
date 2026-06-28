@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { Mail, Phone, MapPin, Facebook, Twitter, Youtube, Instagram, Linkedin, MessageCircle, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, Facebook, MessageCircle, Send } from 'lucide-react'
 import { useAppStore } from '@/lib/store'
 import { navigation } from '@/lib/data'
 import { Button } from '@/components/ui/button'
@@ -167,10 +167,6 @@ export function Footer() {
           <div className="flex flex-wrap gap-2">
             {[
               { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
-              { icon: Twitter, label: 'X / Twitter', href: 'https://twitter.com' },
-              { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
-              { icon: Youtube, label: 'YouTube', href: 'https://youtube.com' },
-              { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
             ].map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
